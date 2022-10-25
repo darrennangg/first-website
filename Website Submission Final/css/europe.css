@@ -1,0 +1,525 @@
+/*CSS for Europe page*/
+
+/*Imported fonts from Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+
+/*Applying parameters and font to everything*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/*CSS for navigation bar*/
+nav {
+  height: 80px; /* Height for navigation container*/
+  width: 100%; /*responsive full screen width*/
+}
+
+label.logo { /*CSS for logo*/
+  color: black;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 60px;
+  font-weight: bold;
+  font-family: "Lobster Two", cursive; /*Custom font for logo*/
+  cursor: pointer; /* Turn cursor to pointer when hovered over*/
+}
+
+.homelogo{
+  text-decoration: none; /*Remove underline on logo*/
+}
+
+.homelogo:hover{
+  background: none; /*Remove background color when hovered over logo*/
+}
+
+nav ul{ /*CSS for navigation link container*/
+  float: right; /*Float navigation links to the right*/
+  margin-right: 20px;
+}
+
+nav ul li{ /*CSS for navigation links*/
+  display: inline-block; /* Put them into a row instead of column*/
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{ /*CSS for navigation link words*/
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active,a:hover{
+  background: #bbeaff; /*background color when hovered over*/
+  transition: .5s; /* fading in effect */
+}
+
+.checkbtn{ /*CSS for menu button when in mobile and tablet mode */
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{ /* remove check button on the left */
+  display: none;
+}
+
+/*CSS to make it responsive for mobile and tablet for nav bar*/
+@media (max-width: 952px){ 
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 2; /*Push menu to the front */
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: skyblue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/*End of CSS for Navigation Bar*/
+
+/*Start of CSS for banner*/
+
+.banner-container{ /*CSS for banner container - setting the dimensions*/
+  width: 100%; /*Responsive width*/
+  height: 100vh; /*Responsive height*/
+}
+
+.banner-container img{ /*CSS for banner image*/
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 50px;
+}
+
+.text-container{ /*CSS for textbox container*/
+  width: 100%;
+  position: relative;
+  margin-top: -45%;
+}
+
+.text-container h1 { /*CSS for text*/
+  text-align: center; /*Move text to center*/
+  width: 100%;
+  font-size: 10vw; /*Size of font*/
+  font-family: "Lobster Two", cursive; /*Different font*/
+  opacity: 0.8; /* Add Transparency to text*/
+}
+
+/*CSS to make it responsive for mobile and tablet for banner*/
+@media screen and (max-width: 1150px) {
+  .text-container {
+    margin-top: -50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .text-container {
+    margin-top: -80%;
+  }
+}
+
+/*End of CSS for banner*/
+
+/*Start of CSS for description box*/
+
+.desc-text-container { /*CSS for description box container*/
+  margin: 0 20px; /*Add margin to both left and right*/
+  text-align: center; /*Push text to the center*/
+}
+
+.desc-text-container h2 { /*CSS for h2 text*/
+  font-size: 4vw;
+}
+
+/*End of CSS for description box
+
+/*Start of CSS for cards*/
+
+article { /*CSS for cards container*/
+  display: flex; /*Display cards in a row*/
+  justify-content: center; /*Push cards to center of display*/
+  align-items: center; /*Align cards in center of display vertically*/
+  min-height: 80vh; /*Min height of container*/
+}
+
+.grid { /*CSS for the grid of cards*/
+  display: flex; /*Display cards in a row in grid*/
+  width: 100em;
+  grid-gap: 3rem; /*Gap between each card*/
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /*Min size to fit screen when display is small*/
+}
+
+.grid-item { /*CSS for individual card*/
+  border-radius: 0.4rem; /*End rounded edges to card*/
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); /*Add shadow effect to cards*/
+  cursor: pointer; /*Turn cursor to pointer when hovered*/
+  transition: 0.2s; /*Transition time of animation*/
+}
+
+.grid-item:hover { /*CSS when card is hovered over*/
+  transform: translateY(-0.5%); /*Move card up, making a jump effect*/
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5); /*Add darker shadow effect*/
+}
+
+.card-img { /*CSS for image in card*/
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content { /*CSS for all text in card*/
+  padding: 2rem;
+}
+
+.card-header { /*CSS for header text in card*/
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card-text { /*CSS for text in card*/
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.modal-open { /*CSS for button in card*/
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-align: center; /*Push text to center of button*/
+  background: skyblue;
+  border: none; /*Remove black outline*/
+  transition: 0.2s;
+  cursor: pointer; /*Change cursor to pointer when button is hovered*/
+}
+
+.modal-open:hover,
+.modal-open:active { /*CSS for button when hovered and opened*/
+  background-color: #bbeaff; 
+}
+
+/*CSS to make it responsive for mobile and tablet for cards*/
+@media only screen and (max-width: 1000px) {
+  article {
+    padding: 3rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 3rem;
+  }
+}
+
+/*End of CSS for cards*/
+
+/*Start of CSS for image gallery*/
+
+/*CSS for gallery title text*/
+.gallery-title{
+  text-align: center;
+  font-size: 4vw;
+}
+
+/*CSS for gallery container*/
+.gallery-container{
+  position: relative;
+  column-count: 3;
+  padding: 20px;
+}
+
+/*CSS for gallery cards*/
+.gallery-image{
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/*CSS for images in cards*/
+.gallery-image img{
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+/*CSS when cards are hovered*/
+.gallery-image:hover img{
+  transform: scale(1.1); /*Making zoom effect*/
+}
+
+/*CSS for text in card*/
+.gallery-image h2{
+  position: absolute;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  background: #5c5c5c;
+  color: white;
+  border-radius: 5px;
+  opacity: 0; /*hide text if card is not hovered*/
+  z-index: 1; /*Bring text box infront of card*/
+  transition: 0.25 ease-in-out;
+}
+
+/*CSS for text when card is hovered over*/
+.gallery-image:hover h2{
+  opacity: 0.5;
+}
+
+/*CSS to make it responsive for mobile and tablet for image gallery*/
+@media screen and (max-width: 1024px){
+  .gallery-container{
+    column-count: 2; /*fit into columns of 2*/
+  }
+
+  .gallery-image h2{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .gallery-container{
+    column-count: 1; /*fit into single column*/
+  }
+}
+
+/*End of CSS for image gallery*/
+
+/*Start of CSS for footer*/
+
+/*CSS for footer container*/
+.footer-container{
+  background-color: white;
+  padding: 2rem 0 2rem 0;
+}
+
+/*CSS for footer*/
+.footer{
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*Contain footer content into container*/
+  margin: 0 auto;
+}
+
+/*CSS for footer text headings*/
+.footer-heading{
+  display: flex; /*Put them in a row*/
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+/*CSS for social media icons*/
+.icons{
+  text-align: center;
+}
+
+.footer-heading h2{
+  margin-bottom: 2rem;
+}
+
+/*CSS for all navigation links in footer*/
+.footer-heading a{
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+/*CSS for all navigation links in footer when hovered*/
+.footer-heading a:hover{
+  color: skyblue;
+  transition: 0.3s ease-in-out;
+  background: none;
+}
+
+.footer-email-form h2{
+  margin-bottom: 2rem;
+}
+
+/*CSS for email box*/
+#footer-email{
+  width: 250px;
+  height: 30px;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 0.5rem; 
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+  color: #b1b1b1;
+}
+
+/*CSS for email button*/
+#footer-email-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/*CSS for email button when hovered*/
+#footer-email-btn:hover{
+  cursor: pointer;
+  background-color: skyblue;
+  transition: all 0.4s ease-out;
+}
+
+/*CSS to make it responsive for mobile and tablet for footer*/
+@media screen and (max-width: 1150px){
+  .footer{
+    height: 60vh;
+  }
+  .footer-email-form{
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 820px){
+  .footer{
+    padding-top: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 720px){
+  .footer-3{
+    display: none; /*Don't display social media section*/
+  }
+  .footer-email-form{
+    margin-top: 1rem;
+  }
+}
+
+/*End of CSS for footer*/
+
+/*Start of CSS for modal*/
+
+.modal { /*CSS for modal container*/
+  position: fixed; /*fix modal position on display*/
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5); /*Add transpancy*/
+  z-index: 2; /*Push modal to front of display*/
+  display: none; /*do not display modal, only display when reader clicks button */
+  animation: modal-open 0.5s; /*slowly animate modal into page*/
+}
+
+.modal-content { /*CSS for modal content*/
+  background: #fff; /*Add white background*/
+  margin-top: 15%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  border-radius: 4px; /*Add rounded edges*/
+  z-index: 4; /*Move text to front of display, infront of modal*/
+}
+
+.modal-header h2{ /*CSS for h2 text in modal*/
+  text-align: center; /*Move text to center*/
+  margin-bottom: 5px;
+}
+
+.modal-body h3{ /*CSS for h3 text in modal*/
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-body h4{
+  text-align: center;
+}
+
+.modal-body p{ /*CSS for text in modal*/
+  padding: 0 50px;
+  text-align: center; /*Move text to center*/
+  margin-bottom: 10px;
+}
+
+.modal-close{ /*CSS for close button in modal*/
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer;
+  color: skyblue;
+
+}
+
+.modal-close:hover{ /*CSS when close button is hovered*/
+  color: black;
+}
+
+/*CSS to make it responsive for mobile and tablet for modals*/
+@media screen and (max-width: 1150px){
+  .modal-body{
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 820px){
+  .modal-header h2{
+    display: none;
+  }
+
+  .modal-body h3{
+    display: none;
+  }
+
+  .modal-body{
+    font-size: 11px;
+  }
+
+/*End of Modal CSS*/

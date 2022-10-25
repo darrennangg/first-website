@@ -1,0 +1,225 @@
+<!--Specify that it is a html document -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Let the browser know that it is to use utf-8 encoding -->
+	<meta charset="UTF-8">
+	<!--Dimensions of the site according to device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Title of website-->
+	<title>Portalble Planet | Events</title>
+	<!--CSS Stylesheet-->
+	<link rel="stylesheet" href="./css/events.css">
+	<!--Imported font-awesome script for icons-->
+	<script src="https://kit.fontawesome.com/f773cf4725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--Start of navigation bar-->
+	<nav>
+		<!--Menu-->
+		<input type="checkbox" id="check">
+		<!--Imported Menu bar from font awesome -->
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<!--Site Logo and navigation to homepage which is current page-->
+		<a class="homelogo" href="index.html"><label class="logo">Portalble Planet</label></a>
+		<!--List of navigation links to other pages of the site-->
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="asia.html">ASIA</a></li>
+			<li><a href="america.html">AMERICA</a></li>
+			<li><a href="europe.html">EUROPE</a></li>
+			<li><a class="active" href="#">EVENTS</a></li>
+		</ul>
+	</nav>
+	<!--End of navigation bar-->
+
+	<!--Start of title text-->
+    <section>
+    	<!--Container for title text-->
+    	<div class="desc-container">
+    		<div class="desc-text-container">
+          		<h2>Events & Festivals Worldwide</h2>
+       		</div>
+        </div>
+    </section>
+    <!--End of title text-->
+	<!--Start of image slider-->
+	<header>
+		<!--Container for image slider-->
+		<div class="slider">
+			<!--First slide and its content-->
+			<div class="slide current">
+				<div class="content">
+					<h1>Don't Miss The Date!</h1>
+					<p>Check out all the hottest events and festivals happening right now all over the world and make sure to join in the fun and not miss out the experience of a life-time!</p>
+				</div>
+			</div>
+			<!--Second slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Rio Carnival</h1>
+					<p>Rio de Janeiro, Brazil</p>
+				</div>
+			</div>
+			<!--Third slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Songkran Water Festival</h1>
+					<p>Thailand</p>
+				</div>
+			</div>
+			<!--Fourth slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Snow And Ice Festival</h1>
+					<p>Harbin, China</p>
+				</div>
+			</div>
+			<!--Last slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Coachella</h1>
+					<p>Indio, California</p>
+				</div>
+			</div>
+		</div>
+		<!--Imported buttons from font-awesome for previous and next slide buttons in slider-->
+		<div class="buttons">
+			<button id="prev"><i class="fas fa-arrow-left"></i></button>
+			<button id="next"><i class="fas fa-arrow-right"></i></button>
+		</div>
+		<!--Javascript for image slider to function-->
+		<script src="./js/events.js"></script>
+	</header>
+	<!--End of slider-->
+
+	<!--Start of section title text-->
+    <section>
+    	<!--Container for section title text-->
+    	<div class="section-text-container">
+          	<h2>Upcoming Popular Events Of This Year</h2>
+       	</div>
+    </section>
+    <!--End of section title text-->
+
+
+    <!--Start of cards-->
+    <article>
+    	<!--Container for grid of cards-->
+    	<div class="grid">
+    		<!--First card-->
+    		<!--Container for card-->
+    		<div class="grid-item">
+    			<!--Content of card including image and text-->
+          		<div class="card">
+          			<img class="card-img" src="media/images/event6.jpg" alt="Holi Festival in India" />
+            		<div class="card-content">
+              			<h1 class="card-header">Holi Festival, India</h1>
+              			<h3 class="card-date"> 28 to 29 March</h3>
+               			<p class="card-text">Holi Festival is celebrated throughout India during the beginning of spring. The 'festival of colours' celebrates Lord Vishnu, and triumph in the face of evil, as well as a plentiful harvest, as a way to give thanks.</p>
+               			<p>Revelry can usually be expected in Rajasthan and Mumbai, and all over the country and beyond, in Australia, Mauritius and the United Kingdom. However, most official events have been cancelled in 2021.</p>	
+               			<p>For the most authentic experience, early birds can book to travel in 2022 to Vrindavan in Uttar Pradesh. This is where Lord Vishnu is thought to have spent his childhood, giving the colour-bursting celebrations throughout the city a special significance.</p>	
+            		</div>
+          		</div>
+       		</div>
+         
+         	<!--Second card-->
+         	<!--Container for card-->
+       		<div class="grid-item">
+       			<!--Content of card including image and text-->
+          		<div class="card">
+          			<img class="card-img" src="media/images/event7.jpeg" alt="Songkraon Festival in Thailand" />
+            		<div class="card-content">
+              			<h1 class="card-header">Songkran, Thailand</h1>
+              			<h3>13 to 15 April</h3>
+              			<p class="card-text">The Water-Splashing Festival, Songkran, marks the beginning of Buddhist New Year all over Thailand. Images of Buddha are bathed in water, and younger Thai people show respect to monks and elders by sprinkling water over their hands.</p>
+              			<p>Despite this traditional element to the festival, people tend to know Songkran for one thing and one thing only: getting completely drenched! As the years go on, the festival morphs into all-our water war, with locals and tourists being blasted by high powered super-soakers.</p>
+             		</div>
+          		</div>
+      		</div>
+    		<!--Third card-->
+    		<!--Container for card-->
+       		<div class="grid-item">
+       			<!--Content of card including image and text-->
+          		<div class="card">
+          			<img class="card-img" src="media/images/event8.webp" alt="Haro Win Festival in Spain" />
+            		<div class="card-content">
+              			<h1 class="card-header">Haro Wine Festival, Spain</h1>
+              			<h3>28 to 30 June</h3>
+               			<p class="card-text">Batalla de Vino, a.k.a. Wine Battle, is as sticky as it sounds. The residents of the La Rioja town of Haro get together around the day of their patron saint, Saint Pedro, to pelt each other with wine.</p>
+               			<p>The dress code is simple: wear a white t-shirt that you fully expect to become grape-purple by the end of battle. Following mass led by the town's mayor, fill up your water pistols and buckets with La Rioja red, and prepare to get sprayin'.</p>
+             		</div>
+          		</div>
+       		</div>
+       		<!--Fourth card-->
+       		<!--Container for card-->
+      		<div class="grid-item">
+      			<!--Content of card including image and text-->
+          		<div class="card">
+          			<img class="card-img" src="media/images/event9.jpg" alt="Balloon Fiesta in Albuquerque, USA" />
+            		<div class="card-content">
+              			<h1 class="card-header">Balloon Fiesta, Albuquerque, USA</h1>
+              			<h3>2 to 10 October</h3>
+               			<p class="card-text">Every year, more than 500 hot air balloons soar into the clear-blue skies above Rio Grande Valley in Alburquerque, New Mexico. The Mass Ascension, as its known, is quite an unforgettable sight: an explosion of rainbow colours, funky patterns and awe-inspiring design.</p>
+               			<p>Events also take place at night, and you don't need to have your own hot air balloon to join in. You can buy a ticket, rock up and simply enjoy the view.</p>
+             		</div>
+          		</div>
+       		</div>
+        </div>
+    </article>
+    <!-- End of cards-->
+	
+	<!--Start of footer-->
+	<footer>
+		<!--Container for footer-->
+		<div class="footer-container">
+			<div class="footer">
+				<!--List for first footer section-->
+				<div class="footer-heading footer-1">
+					<h2>Destinations</h2>
+					<!--Navigation links to other pages-->
+					<a href="asia.html#ASIA">Asia</a>
+					<a href="asia.html#SA">Southeast Asia</a>
+					<a href="america.html#NA">North America</a>
+					<a href="america.html#SA">South America</a>
+					<a href="europe.html#EURO">Europe</a>					
+				</div>
+				<!--List for second footer section-->
+				<div class="footer-heading footer-2">
+					<h2>Interests</h2>
+					<!--Dummy Navigation links to future pages-->
+					<a href="#">Beaches And Islands</a>
+					<a href="#">Family Trips</a>
+					<a href="#">Honeymoon</a>
+					<a href="#">Food And Drink</a>
+					<a href="#">Wildlife And Nature</a>
+					<a href="#">Festivals</a>					
+				</div>
+				<!--List for third footer section-->
+				<div class="footer-heading footer-3">
+					<h2>Social Media</h2>
+					<!--Navigation icons leading to social media profiles-->
+					<div class="icons">
+						<!--Social Media Icons imported from font-awesome-->
+						<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+						<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+						<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+					</div>							
+				</div>
+				<!--Sign up section-->
+				<div class="footer-email-form">
+					<h2>Join Us</h2>
+					<!--Text box to input email to sign up-->
+					<input type="email" placeholder="Enter your email" id="footer-email">
+					<!--Button to sign up-->
+					<input type="submit" value="Sign Up" id="footer-email-btn">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--End of footer-->
+</body>
+</html>

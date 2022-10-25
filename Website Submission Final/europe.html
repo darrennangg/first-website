@@ -1,0 +1,492 @@
+<!--Specify that it is a html document -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Let the browser know that it is to use utf-8 encoding -->
+  <meta charset="UTF-8">
+  <!--Dimensions of the site according to device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Title of website-->
+  <title>Portalble Planet | Europe</title>
+  <!--CSS Stylesheet-->
+  <link rel="stylesheet" href="./css/europe.css">
+  <!--Imported font awesome script for icons-->
+  <script src="https://kit.fontawesome.com/f773cf4725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Start of navigation bar-->
+  <nav>
+    <!--Menu-->
+    <input type="checkbox" id="check">
+    <!--Imported Menu bar from font awesome -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!--Site Logo and navigation to homepage which is current page-->
+    <a class="homelogo" href="index.html"><label class="logo">Portalble Planet</label></a>
+    <!--List of navigation links to other pages of the site-->
+    <ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="asia.html">ASIA</a></li>
+			<li><a href="america.html">AMERICA</a></li>
+			<li><a class="active" href="#">EUROPE</a></li>
+			<li><a href="events.html">EVENTS</a></li>
+		</ul>
+	</nav>
+	<!--End of navigation bar-->
+
+  <!--Start of banner image-->
+  <header>
+    <div class="banner-container">
+      <img src="media/images/europe.jpg" />
+      <div class="text-container">
+        <h1>Europe</h1>
+      </div>
+    </div>
+  </header>
+  <!--End of banner image-->
+
+  <!--Start of welcome description-->
+  <section>
+    <!--Container for description-->
+    <div class="desc-container">
+      <!--Container for text content-->
+      <div class="desc-text-container">
+        <h2 id="EURO">Welcome To Europe</h2>
+        <p>There simply is no way to tour Europe and not be awestruck by its natural beauty, epic history and dazzling artistic and culinary diversity. Europe is one of the most diverse continents you can visit. It has a deep-rooted history and is a melting pot of cultures from all over the world – not to mention the unique architecture and cuisines that vary from country to country. Whether you’re taking your first solo trip, backpacking on a budget, looking for a ritzy getaway, or wanting to explore new cities and cultures, Europe has something for everyone.</p>
+      </div>
+    </div>
+  </section>
+  <!--End of welcome description-->
+
+  <!--Start of cards-->
+
+  <!--Start of first row of cards-->
+  <article>
+    <!--Container for grid of cards-->
+    <div class="grid">
+      <!--First card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" id="france" src="media/images/france.jpg" alt="Skylien of Paris image" />
+          <div class="card-content">
+            <h1 class="card-header">France</h1>
+            <p class="card-text">Skyline of Paris</p>
+            <!--button for first modal-->
+            <button class="modal-open" data-modal="modal1">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Second card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/germany.jpg" alt="Town of Rothenburg ob der Tauber image" />
+          <div class="card-content">
+            <h1 class="card-header">Germany</h1>
+            <p class="card-text">Rothenburg ob der Tauber</p>
+            <!--button for second modal-->
+            <button class="modal-open" data-modal="modal2">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Third card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/italy.jpg" alt="Skyline of Venice image" />
+          <div class="card-content">
+            <h1 class="card-header">Italy</h1>
+            <p class="card-text">Skyline of Venice</p>
+            <!-- button for third modal -->
+            <button class="modal-open" data-modal="modal3">Learn More</button>
+          </div>
+        </div>
+      </div>
+     <!--Fourth card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" id="spain" src="media/images/spain.jpg" alt="Monestir de Montserrat image" />
+          <div class="card-content">
+            <h1 class="card-header">Spain</h1>
+            <p class="card-text">Monestir de Montserrat</p>
+            <!--button for modal 4-->
+            <button class="modal-open" data-modal="modal4">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!--Start of second row of cards-->
+  <article>
+    <!--Container for grid of cards-->
+    <div class="grid">
+      <!--First card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/switzerland.jpg" alt="Kandersteg resort village image" />
+          <div class="card-content">
+            <h1 class="card-header">Switzerland</h1>
+            <p class="card-text">Kandersteg resort village</p>
+            <!--Button for fifth modal-->
+            <button class="modal-open" data-modal="modal5">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Second card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/uk.jpg" alt="Tower Bridge image" />
+          <div class="card-content">
+            <h1 class="card-header">UK</h1>
+            <p class="card-text">Tower Bridge</p>
+            <!--Button for sixth modal-->
+            <button class="modal-open" data-modal="modal6">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Third card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/greece.jpg" alt="Oia, Santorini image" />
+          <div class="card-content">
+            <h1 class="card-header">Greece</h1>
+            <p class="card-text">Oia, Santorini</p>
+            <!--Button for seventh modal-->
+            <button class="modal-open" data-modal="modal7">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Fourth card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/sweden.jpg" alt="Södermalm, Stockholm image" />
+          <div class="card-content">
+            <h1 class="card-header">Sweden</h1>
+            <p class="card-text">Södermalm, Stockholm</p>
+            <!--Button for eighth modal-->
+            <button class="modal-open" data-modal="modal8">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!--Start of Modal content for first row of cards-->    
+
+  <!-- Start of first Modal -->
+    <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal1">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to France</h2> 
+            <div class="modal-body">
+              <h3>France seduces travellers with its unfalteringly familiar culture, woven around cafe terraces, village-square markets and lace-curtained bistros with their plat du jour (dish of the day) chalked on the board.</h3>
+              <h4>Cultural Savoir Faire</h4>
+              <p>France is about world-class art and architecture. It seduces with iconic landmarks known the world over and rising stars yet to be discovered. This country's cultural repertoire is staggering – in volume and diversity. And this is where the beauty of la belle France lies: when superstars such as Mademoiselle Eiffel, royal Versailles and the celebrity-ridden French Riviera have been ticked off, there’s ample more to thrill. France is, after all, the world's top tourism destination with some 89 million visitors each year who flock to the land of the Gauls to feast on its extraordinary wealth of museums, galleries, ateliers (artist workshops) and hands-on cultural experiences.</p>
+              <h4>Gastronomy</h4>
+              <p>Food is of enormous importance to the French and the daily culinary agenda takes no prisoners: breakfasting on warm croissants from the boulangerie (bakery), stopping off at Parisian bistros, and market shopping are second nature to the French – and it would be rude to refuse. But French gastronomy goes far deeper than just eating exceedingly well. Its experiential nature means there is always something tasty to observe, learn and try. Be it flipping crêpes in Brittany or clinking champagne flutes in ancient Reims cellars, the culinary opportunities are endless.</p>
+              <h4>Art de Vivre</h4>
+              <p>The rhythm of daily life – dictated by the seasons in the depths of la France profonde (rural France) – exudes an intimacy that gets under your skin. Don’t resist. Rather, live the French lifestyle. Embrace the luxury of simple, everyday rituals being transformed into unforgettable moments, be it a coffee and croissant in the Parisian cafe where Jean-Paul Sartre and Simone de Beauvoir met to philosophise, a stroll through the lily-clad gardens Monet painted, or a walk on a beach in Brittany scented with the subtle infusion of language, music and mythology brought by 5th-century Celtic invaders.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  
+  <!--Second Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal2">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Germany</h2> 
+            <div class="modal-body">
+              <h3>Prepare for a roller-coaster ride of feasts, treats and temptations experiencing Germany's soul-stirring scenery, spirit-lifting culture, big-city beauties, romantic palaces and half-timbered towns.</h3>
+              <h4>Bewitching Scenery</h4>
+              <p>There's something undeniably artistic in the way Germany's scenery unfolds; the corrugated, dune-fringed coasts of the north; the moody forests, romantic river valleys and vast vineyards of the centre; and the off-the-charts splendour of the Alps, carved into rugged glory by glaciers and the elements. All of these are integral parts of a magical natural matrix that's bound to give your camera batteries a good workout. Get off the highway and into the great outdoors to soak up the epic landscapes that make each delicious, slow, winding mile so precious.</p>
+              <h4>Pleasures of Civilisation</h4>
+              <p>You'll encounter history in towns where streets were laid out long before Columbus set sail, and in castles that loom above prim, half-timbered villages where flower boxes billow with crimson geraniums. The great cities – including Berlin, Munich and Hamburg – come in more flavours than a jar of jelly beans but all will wow you with a cultural kaleidoscope that spans the arc from art museums and high-brow opera to naughty cabaret and underground clubs. And wherever you go, Romanesque, Gothic and baroque classics rub rafters with architectural creations from modern masters such as Daniel Libeskind, David Chipperfield and Frank Gehry.</p>
+              <h4>Gastro Delights</h4>
+              <p>Experiencing Germany through its food and drink will add a rich layer to your memories (and possibly to your belly!). You'll quickly discover that the local food is so much more than sausages and pretzels, schnitzel and roast pork accompanied by big mugs of foamy beer. Beyond the clichés awaits a cornucopia of regional and seasonal palate-teasers. Share the German people's obsession with white asparagus in springtime, chanterelle mushrooms in summer and game in autumn. Sample not only the famous beer but also world-class wines, most notably the noble Riesling.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Third Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal3">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Italy</h2> 
+            <div class="modal-body">
+              <h3>Home to many of the world's greatest works of art, architecture and gastronomy, Italy elates, inspires and moves like no other.</h3>
+              <h4>Cultural Riches</h4>
+              <p>Epicentre of the Roman Empire and birthplace of the Renaissance, this European virtuoso groans under the weight of its cultural cachet: it's here that you'll stand in the presence of Michelangelo's David and Sistine Chapel frescoes, Botticelli's Birth of Venus and Primavera and da Vinci's The Last Supper. In fact, Italy has more Unesco World Heritage cultural sites than any other country on Earth. Should you walk in the footsteps of ancient Romans in Pompeii, revel in Ravenna's glittering Byzantine treasures or get breathless over Giotto's revolutionary frescoes in Padua? It's a cultural conundrum as thrilling as it is overwhelming.</p>
+              <h4>Endless Feasts</h4>
+              <p>It might look like a boot, but food-obsessed Italy feels more like a decadently stuffed Christmas stocking. From delicate tagliatelle al ragù (pasta ribbons in a meat-based sauce) to velvety cannoli (crisp pastry shells filled with sweet ricotta), every bite can feel like a revelation. The secret: superlative ingredients and finely tuned know-how. And while Italy's culinary soul might prefer simplicity, it's equally ingenious and sophisticated. Expect some of the world's top fine-dining destinations, from San Pellegrino 'World's Best 50' hot spots to Michelin-starred musts. So whether you're on a degustation odyssey in Modena, truffle hunting in Piedmont or swilling powerhouse reds in the Valpolicella wine region, prepare to loosen that belt.</p>
+              <h4>Spectacular Landscapes</h4>
+              <p>Italy's fortes extend beyond its galleries, wardrobes and dining rooms. The country is one of nature's masterpieces, with extraordinary natural diversity matched by few. From the north's icy Alps and glacial lakes to the south's fiery craters and turquoise grottoes, this is a place for doing as well as seeing. One day you're tearing down Courmayeur's powdery slopes, the next you could be galloping across the marshes of the Maremma, or diving in coral-studded Campanian waters. Not bad for a country not much bigger than Arizona.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Fourth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal4">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Spain</h2> 
+            <div class="modal-body">
+              <h3>Passionate, sophisticated and devoted to living the good life, Spain is both a stereotype come to life and a country more diverse than you ever imagined.</h3>
+              <h4>Fiestas & Flamenco</h4>
+              <p>For all the talk of Spain's history, this is a country that lives very much in the present and there's a reason 'fiesta' is one of the best-known words in the Spanish language – life itself is a fiesta here and everyone seems to be invited. Perhaps you'll sense it along a crowded, post-midnight street when all the world has come out to play. Or maybe that moment will come when a flamenco performer touches something deep in your soul. Whenever it happens, you'll find yourself nodding in recognition: this is Spain.</p>
+              <h4>An Epic Land</h4>
+              <p>Spain’s diverse landscapes stir the soul. The Pyrenees and the Picos de Europa are as beautiful as any mountain range on the continent, while the snowcapped Sierra Nevada rises up improbably from the sun-baked plains of Andalucía; these are hiking destinations of the highest order. The wildly beautiful cliffs of Spain’s Atlantic northwest are offset by the charming coves of the Mediterranean. And everywhere you go, villages of timeless beauty perch on hilltops, huddle in valleys and cling to coastal outcrops as tiny but resilient outposts of Old Spain. That's where the country's charms are most likely to take hold.</p>
+              <h4>A Culinary Feast</h4>
+              <p>Food and wine are national obsessions in Spain, and with good reason. The touchstones of Spanish cooking are deceptively simple: incalculable variety, traditional recipes handed down through the generations, and an innate willingness to experiment and see what comes out of the kitchen laboratory. You may experience the best meal ever via tapas in an earthy bar where everyone's shouting, or via a meal prepared by a celebrity chef in the refined surrounds of a Michelin-starred restaurant. Either way, the breadth of gastronomic experience that awaits you is breathtaking and sure to be a highlight of your trip.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!--End of Modal Content for first row of cards-->
+
+  <!--Start of Modal Content for second row of cards-->    
+
+  <!--Fifth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal5">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Switzerland</h2> 
+            <div class="modal-body">
+              <h3>Look beyond the chocolate, cuckoo clocks and yodelling – contemporary Switzerland, land of four languages, is all about once-in-a-lifetime journeys, heart-racing Alpine pursuits and urban culture.</h3>
+              <h4>Great Outdoors</h4>
+              <p>Switzerland's ravishing landscapes demand immediate action – grab boots, leap on board, toot bike bell and let spirits rip. Skiing and snowboarding in Graubünden, Bernese Oberland and Central Switzerland are winter choices. When pastures turn green, hiking and biking trails abound in glacier-encrusted mountain areas and lower down along lost valleys, glittering lake shores and pea-green vineyards. View the grandeur from a hot-air balloon or parachute, or afloat a white-water raft. Then there's those must-do-before-death experiences like encountering Eiger's chiselled north face up close or reaching crevassed ice on Jungfraujoch. Most extraordinary of all, you don’t need to be a mountaineer to do it.</p>
+              <h4>Urban Edge</h4>
+              <p>The perfect antidote to rural beauty is Switzerland's urban edge: capital Bern with its medieval old town and world-class modern art, deeply Germanic Basel and its bold architecture, chic Geneva astraddle Europe’s largest lake, party-loving Lausanne, tycoon magnet Zug and uber-cool Zürich with its riverside bars, reborn industrial west district and atypical street grit. Castles and craft beer, gigs and new-wave restaurants – you’ll find the lot in Swiss cities. And never has the urban been so close to the outdoors: within minutes you can reach nearby peaks, chill at waterfront bars with Alpine views, or enjoy invigorating swims in the Rhine, Aare and Limmat.</p>
+              <h4>Alpine Tradition</h4>
+              <p>Variety is the spice of rural life in this rich, earthy land where Alpine tradition is rooted in the agricultural calendar and soaring mountains are a dime a dozen. Travels are mapped by villages with timber granaries built on stilts to keep the rats out and chalet farmsteads brightened with red geranium blossoms. Ancient markets, folkloric fairs, flag waving and alp-horn concerts engrave the passing of seasons in every soul. And then there's the food: a hearty and flavoursome gastronomic celebration of gooey cheese desperate to be dipped in, along with velvety chocolate, autumnal game and air-dried meats.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  
+  <!--Sixth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal6">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to The United Kingdom</h2> 
+            <div class="modal-body">
+              <h3>Few places cram in as much scenery, history and culture as the United Kingdom. It's a busy, eccentric and unique destination; a land of daft humour, tea-and-cake cliches and a thousand and one different personalities; a land where thrusting cities like London, Glasgow and Manchester share map space with the peaks of Snowdonia and the colossal slopes of the Highlands.</h3>
+              <p>Four component nations make up the UK, and the end result is as many-layered as that fact would suggest. Its arts scene continues to be one of the most creative and successful in the world, its passions still run high on everything from politics to sport and its overall character is as modern as it is multicultural. Even the food's good these days.</p>
+              <p>London remains the natural focal point. Its skyline, mixing medieval turrets with soaring steel, is a good marker for the place as a whole. From its markets to its museums, its pubs to its palaces, it's a bona fide world city packed with diversity.  But you don't have to look far to find other great urban centres - England, Scotland, Wales and Northern Ireland are all home to richly engaging cities full of heritage, music and nightlife. Some, like Bath and Edinburgh, offer postcard-perfect medieval skylines. Others, like Belfast and Liverpool, are handsome in places but just as notable for their indelible personalities.
+              </p>
+              <p>As a country, of course, the UK's urban centres are just one part of its allure. Britain is often extremely beautiful. Seaside towns, national parks and honey-stoned villages still fill the guidebooks, and the scenic pull of areas like the Cornish coast, Giant's Causeway and the Lake District is as strong as it's ever been. Once you factor in the endless cultural associations that Britain throws up - from Henry VIII to Hogwarts, The Beatles to Braveheart, male voice choirs to Monty Python - it stands as a country very much its own.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Seventh Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal7">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Greece</h2> 
+            <div class="modal-body">
+              <h3>Greece is ancient sun-bleached ruins piercing blue skies, the balmy Aegean lapping an endless coastline and a culture alive with passionate music, wonderful cuisine and thrill-seeking activities.</h3>
+              <h4>Cultural Treasure Chest</h4>
+              <p>The roots of Western culture are in Greece. Step into the ring where Olympians first competed. Climb steps hewn out of stone to Meteora’s monasteries, perched atop towering rocks. Contemplate the oracle’s insights from the grandeur of Delphi, take in a starlit drama at an ancient outdoor theatre and be stunned by massive marble sculptures dredged up from the Aegean. But then you’ll encounter bold modern art, the melancholic throb of rembetika (blues songs) and artisans creating new work from traditional techniques. Greece has endless cultural pursuits and a calendar bursting with festivals, holidays and exhibits.</p>
+              <h4>Wildly Natural</h4>
+              <p>Whether you're a serious adrenalin junkie or dedicated beach bum, Greece delivers. Days melt from one to the next under wide open skies and a sea speckled with islands fringed with the white-sand, pine-tree shade beaches of your dreams. Wander along cobbled Byzantine footpaths, hike up volcanoes, watch for dolphins and sea turtles, and cycle through lush forests. Meander through olive groves, idyllic villages and petrified forests. Thrill seekers will discover world-class kitesurfing, wreck diving, and rock-climbing locations with dizzying views. Or simply hop on a boat and set sail into the glittering blue beyond.</p>
+              <h4>Socially Spirited</h4>
+              <p>Socialising is more than a pastime in Greece – it's a way of life. Cafes overflow with youngsters gossiping or older locals in heated debate. Restaurants are filled with long tables for big gatherings and friends amble arm in arm down the street. Squares are the focal point, where life unfolds collectively. Immerse yourself, whether it's a coffee, a shot of ouzo, a chorus on the bouzouki or a local celebration. Greeks are passionate and live life to the fullest, even at the most difficult times. The result is a country seemingly riddled with challenges, yet full of people loving life.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Eigth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal8">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Sweden</h2> 
+            <div class="modal-body">
+              <h3>Offering everything from deep-blue archipelagos and Northern Lights, to killer fashion, food and design, Sweden is a Nordic dream date.</h3>
+              <h4>Swedish Style</h4>
+              <p>Few countries are as design literate as Sweden. Impeccable taste and attention to detail make much of the country look like a shoot for Wallpaper or Architectural Digest. Almost everyone in Stockholm got the memo to 'look sharp', while the prevalence of irresistible furnishings, textiles and lighting in cafes, restaurants and homes across the nation are nothing short of enviable. Yet, Swedish style is rarely ostentatious; form and function are tightly linked in a society that reveres moderation, simplicity and practicality. Prepare to celebrate all things beautiful and democratic.</p>
+              <h4>Natural Grandeur</h4>
+              <p>Truth be told, the best thing about Sweden is its natural assets. Indeed, to really appreciate this country’s magnetism, take time to leave the city behind. Whether you're sailing across an archipelago to a lonely island or trekking along a kingly trail flanked by snowcapped mountains, the sense of space, solitude and freedom is matched by few corners of Western Europe. It makes perfect sense: Sweden claims one of the lowest population densities on the continent. So, go pitch a tent by a Baltic beach or ride a sleigh under the Northern Lights. You can thank Mother Nature later.</p>
+              <h4>Historical Riches</h4>
+              <p>History is written large in Sverige. Ancient rune stones poke up out of grassy parks, while huge stone-ship settings and burial mounds recall long-gone kings and chiefs. Across the country, walled medieval cities, seaside fortresses, turreted palaces and revealing museums attest to Sweden's long and complex backstory. Each historical artefact, building and ruin is a piece of a jigsaw. Put them together and you'll come closer to understanding how each historical high and low has helped shape the modern nation and its widely admired denizens.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!--End of Modal Content of second row of cards-->
+
+  <!--End of cards-->
+
+  <!--Start of image gallery-->
+  <section>
+  	<!--Title of gallery-->
+  	<h1 class="gallery-title">Iconic Landmarks In Europe</h1>
+  	<!--Gallery container-->
+  	<div class="gallery-container">
+  		<!--First gallery image card-->
+  		<div class="gallery-image">
+  			<h2>Eiffel Tower, Paris</h2>
+  			<img src="media/images/gallery1.jpg" alt="Eiffel Tower in Paris">
+  		</div>
+  		<!--Second gallery image card-->
+  		<div class="gallery-image">
+  			<h2>Colosseum, Rome</h2>
+  			<img src="media/images/gallery2.jpg" alt="Collosseum in Rome">
+  		</div>
+  		<!--Third gallery image card-->
+  		<div class="gallery-image">
+  			<h2>Charles Bridge, Prague</h2>
+  			<img src="media/images/gallery3.jpg" alt="Charles Bridge in Prague">
+  		</div>
+  		<!--Fourth gallery image card-->
+  		<div class="gallery-image">
+  			<h2>The Sistine Chapel, Vatican City</h2>
+  			<img src="media/images/gallery4.jpg" alt="The Sistine Chapel in Vatican City">
+  		</div>
+  		<!--Fifth gallery image card-->
+  		<div class="gallery-image">
+  			<h2>Leaning Tower of Pisa, Italy</h2>
+  			<img src="media/images/gallery5.jpg" alt="Leaning Tower of Pisa in Italy">
+  		</div>
+  		<!--Sixth gallery image card-->
+  		<div class="gallery-image">
+  			<h2>Mosque-Cathedral of Cordoba, Spain</h2>
+  			<img src="media/images/gallery6.jpg" alt="Mosque-Cathedral of Cordoba in Spain">
+  		</div>
+  		<!--Seventh gallery image card-->
+  		<div class="gallery-image">
+  			<h2>Bradenburg Gate, Berlin</h2>
+  			<img src="media/images/gallery7.jpg" alt="Bradenburg Gate in Berlin">
+  		</div>
+  		<!--Eighth gallery image card-->
+  		<div class="gallery-image">
+  			<h2>The Louvre, Paris</h2>
+  			<img src="media/images/gallery8.jpg" alt="The Louvre in Paris">
+  		</div>  		  		
+  	</div>
+  </section>
+  <!--End of image gallery-->
+
+  <!--Start of footer-->
+  <footer>
+    <!--Container for footer-->
+    <div class="footer-container">
+      <div class="footer">
+        <!--List for first footer section-->
+        <div class="footer-heading footer-1">
+          <h2>Destinations</h2>
+          <!--Navigation links to other pages-->
+          <a href="asia.html#ASIA">Asia</a>
+          <a href="asia.html#SA">Southeast Asia</a>
+          <a href="america.html#NA">North America</a>
+          <a href="america.html#SA">South America</a>
+          <a href="europe.html#EURO">Europe</a>         
+        </div>
+        <!--List for second footer section-->
+        <div class="footer-heading footer-2">
+          <h2>Interests</h2>
+          <!--Dummy Navigation links to future pages-->
+          <a href="#">Beaches And Islands</a>
+          <a href="#">Family Trips</a>
+          <a href="#">Honeymoon</a>
+          <a href="#">Food And Drink</a>
+          <a href="#">Wildlife And Nature</a>
+          <a href="#">Festivals</a>         
+        </div>
+        <!--List for third footer section-->
+        <div class="footer-heading footer-3">
+          <h2>Social Media</h2>
+          <!--Navigation icons leading to social media profiles-->
+          <div class="icons">
+            <!--Icons imported from font-awesome-->
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          </div>              
+        </div>
+        <!--Sign up section-->
+        <div class="footer-email-form">
+          <h2>Join Us</h2>
+          <!--Text box to input email to sign up-->
+          <input type="email" placeholder="Enter your email" id="footer-email">
+          <!--Button to sign up-->
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End of footer-->
+
+<!--Javascript for modals to work-->
+<script src="./js/europe.js"></script>
+</body>
+</html>

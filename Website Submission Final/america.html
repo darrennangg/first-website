@@ -1,0 +1,459 @@
+<!--Specify that it is a html document -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Let the browser know that it is to use utf-8 encoding -->
+  <meta charset="UTF-8">
+  <!--Dimensions of the site according to device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Title of website-->
+  <title>Portalble Planet | America</title>
+  <!--CSS Stylesheet-->
+  <link rel="stylesheet" href="./css/america.css">
+  <!--Imported font awesome script for icons-->
+  <script src="https://kit.fontawesome.com/f773cf4725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Start of navigation bar-->
+  <nav>
+    <!--Menu-->
+    <input type="checkbox" id="check">
+    <!--Imported Menu bar from font awesome -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!--Site Logo and navigation to homepage which is current page-->
+    <a class="homelogo" href="index.html"><label class="logo">Portalble Planet</label></a>
+    <!--List of navigation links to other pages of the site-->
+    <ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="asia.html">ASIA</a></li>
+			<li><a class="active" href="#">AMERICA</a></li>
+			<li><a href="europe.html">EUROPE</a></li>
+			<li><a href="events.html">EVENTS</a></li>
+		</ul>
+	</nav>
+	<!--End of navigation bar-->
+
+  <!--Start of banner image-->
+  <header>
+    <!--Container for banner-->
+    <div class="banner-container">
+      <img src="media/images/america1.jpg" />
+      <div class="text-container">
+        <h1>America</h1>
+      </div>
+    </div>
+  </header>
+  <!--End of banner image-->
+
+  <!--Start of welcome description-->
+  <section>
+    <!--Container for description-->
+    <div class="desc-container">
+      <!--Container for text content-->
+      <div class="desc-text-container">
+        <h2 id="NA">Welcome To North America</h2>
+        <p>If you want epic, you’ve come to the right place. Being the third-largest continent in the world, the vast territory that makes up the US, Canada, Mexico and Bahamas is a place of mythic journeys, eye-boggling scenery, and – beyond those headline-grabbing, culture-dominating cities – raw wilderness.
+        <br>
+        <br>    
+        Because of its size, there are SO many things you can do on a trip to North America—hit the ski slopes in Canada, drive the California coastline, catch some rays in Mexico, go scuba diving off the coast of Florida, and explore the islands of Puerto Rico. There is a destination in North America to vacation to for every season of the year. You can literally hit the mountains, beaches, and desert all in one trip!</p>
+      </div>
+    </div>
+  </section>
+  <!--End of welcome description-->
+
+  <!--Start of first row of cards-->
+  <article>
+    <!--Container for grid of cards-->
+    <div class="grid">
+      <!--First card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" id="usa" src="media/images/usa.jpg" alt="New York City image" />
+          <div class="card-content">
+            <h1 class="card-header">USA</h1>
+            <p class="card-text">Skyline of New York</p>
+            <!--button for first modal-->
+            <button class="modal-open" data-modal="modal1">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Second card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/canada.jpg" alt="Moraine Lake image" />
+          <div class="card-content">
+            <h1 class="card-header">Canada</h1>
+            <p class="card-text">Moraine Lake</p>
+            <!--button for second modal-->
+            <button class="modal-open" data-modal="modal2">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Third card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/mexico2.jpg" alt="A Cathedral in Morelia image" />
+          <div class="card-content">
+              <h1 class="card-header">Mexico</h1>
+              <p class="card-text">Cathedral in Morelia</p>
+              <!-- button for third modal -->
+              <button class="modal-open" data-modal="modal3">Learn More</button>
+          </div>
+        </div>
+      </div>
+     <!--Fourth card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/bahamas.jpg" alt="A Resort in Nassau image" />
+          <div class="card-content">
+              <h1 class="card-header">Bahamas</h1>
+              <p class="card-text">Resort in Nassau</p>
+              <!--button for modal 4-->
+              <button class="modal-open" data-modal="modal4">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!--Start of Modal content for first row of cards-->    
+
+  <!-- Start of first Modal -->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal1">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to USA</h2> 
+          <div class="modal-body">
+            <h3>The great American experience is about so many things: bluegrass and beaches, snow-covered peaks and redwood forests, restaurant-loving cities and big open skies.</h3>
+            <h4>Bright Lights, Big Cities</h4>
+            <p>America is the birthplace of LA, Las Vegas, Chicago, Miami, Boston and New York City – each a brimming metropolis whose name alone conjures a million different notions of culture, cuisine and entertainment. Look more closely, and the American quilt unfurls in all its surprising variety: the eclectic music scene of Austin, the easygoing charms of antebellum Savannah, the eco-consciousness of free-spirited Portland, the magnificent waterfront of San Francisco and the captivating French Quarter of jazz-loving New Orleans. Each city adds its unique style to the grand patchwork that is America.</p>
+            <h4>Food-Loving Nation</h4>
+            <p>On one evening in the US, thick barbecue ribs come piping hot at a Texas roadhouse, while chefs blend organic produce with Asian accents at award-winning West Coast restaurants. Locals get their fix of bagels and lox at a century-old deli in Manhattan's Upper West Side and, several states away, plump pancakes and fried eggs disappear under the clatter of cutlery at a 1950s-style diner. Steaming plates of lobster from a Maine pier, oysters and champagne from a California wine bar, Korean tacos out of a Portland food truck – these are just a few ways to dine à la Americana.</p>
+            <h4>On the Road Again</h4>
+            <p>This is a country of road trips and great open skies, where 4 million miles of highways lead past red-rock deserts, below towering mountain peaks and through fertile wheat fields that roll off toward the horizon. The sun-bleached hillsides of the Great Plains, the lush rainforests of the Pacific Northwest, the sultry swamplands of the South and the scenic country lanes of New England are a few fine starting points for the great American road trip. Veer off the interstate often to discover the bucolic 'blue highways' of lore.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  
+  <!--Second Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal2">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Canada</h2> 
+          <div class="modal-body">
+            <h3>Canada is more than its hulking-mountain, craggy-coast good looks: it also cooks extraordinary meals, rocks cool culture and unfurls wild, moose-spotting road trips.</h3>
+            <h4>The Great Outdoors</h4>
+            <p>The globe's second-biggest country has an endless variety of landscapes, and nature is why many visitors come. Sky-high mountains, glinting glaciers, spectral rainforests and remote beaches are all here, spread across six times zones. They're the backdrop for plenty of 'ah'-inspiring moments – and for a big cast of local characters. That's big as in polar bears, grizzly bears, whales and everyone's favorite, moose. The terrain also makes for a fantastic playground. Whether it's snowboarding Whistler's mountains, surfing Nova Scotia's swells, wreck diving in the turquoise waters off the Bruce Peninsula or kayaking the white-frothed South Nahanni River in the Northwest Territories, adventures abound. There are gentler options, too, such as strolling Vancouver's Stanley Park and swimming off Prince Edward Island's pink-sand beaches.</p>
+            <h4>Captivating Cultures</h4>
+            <p>Sip a café au lait and tear into a flaky croissant at a sidewalk bistro in Montréal; slurp noodles or head to an Asian night market in the Vancouver area; explore Toronto's rich performing arts scene; join a wild-fiddling Celtic party on Cape Breton Island; and kayak between rainforest-cloaked indigenous villages on Haida Gwaii: Canada is incredibly diverse across its breadth and within its cities. You'll hear it in the music, see it in the arts and taste it in the cuisine.</p>
+            <h4>Foodie Fare</h4>
+            <p>Canada is a smorgasbord of local food. If you grazed from west to east across the country, you'd fill your plate with wild salmon and velvety scallops in British Columbia, poutine (French fries topped with gravy and cheese curds) in Québec, and lobster with a dab of melted butter in the Maritime provinces. Tastemakers may not tout Canadian food the way they do, say, Italian or French fare, so let's just call the distinctive seafood, piquant cheeses and fresh, seasonal fruits and veggies our little secret. Ditto for the award-winning bold reds and crisp whites produced by the country's vine-striped valleys.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Third Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal3">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Mexico</h2> 
+          <div class="modal-body">
+            <h3>Palm-fringed beaches, chili-spiced cuisine, steamy jungles, teeming cities, fiesta fireworks, Frida’s angst: Mexico conjures up diverse, vivid dreams. And the reality lives up to them.</h3>
+            <h4>Los Mexicanos</h4>
+            <p>At the heart of your Mexican experience will be the Mexican people. A super-diverse crew, from Mexico City hipsters to the shy indigenous villagers of Chiapas, they’re renowned for their love of color and frequent fiestas, but they're also philosophical folk, to whom timetables are less important than simpatía (empathy). You'll rarely find Mexicans less than courteous. They’re more often positively charming, and know how to please guests. They might despair of ever being well governed, but they're fiercely proud of Mexico, their one-of-a-kind homeland with all its variety, tight-knit family networks, beautiful-ugly cities, deep-rooted traditions and agave-based liquors.</p>
+            <h4>An Outdoor life</h4>
+            <p>With steaming jungles, snowcapped volcanoes, cactus-strewn deserts and 10,000km of coast strung with sandy beaches and wildlife-rich lagoons, Mexico is an endless adventure for the senses and a place where life is lived largely in the open air. Harness the pounding waves of the Pacific on a surfboard, strap on a snorkel to explore the beauty beneath the surface of the Caribbean Sea and ride the whitewater of Mexico's rivers. Or stay on dry land and hike Oaxaca's mountain cloud forests, scale the peaks of dormant volcanoes or marvel at millions of migrating Monarch butterflies.</p>
+            <h4>Art & Soul of a Nation</h4>
+            <p>Mexico's pre-Hispanic civilizations built some of the world’s great archaeological monuments, including Teotihuacán’s towering pyramids and the exquisite Maya temples of Palenque. The Spanish colonial era left beautiful towns full of tree-shaded plazas and richly sculpted stone churches and mansions, while modern Mexico has seen a surge of great art from the likes of Diego Rivera and Frida Kahlo. Top-class museums and galleries document the country's fascinating history and its endless creative verve. Popular culture is just as vibrant, from the underground dance clubs and street art of Mexico City to the wonderful handicrafts of the indigenous population.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Fourth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal4">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Bahamas</h2> 
+          <div class="modal-body">
+            <p>Spangled between the depths of the North Atlantic and Florida's eastern coast, the Bahamas – not technically part of the Caribbean – comprises more than 700 stunning subtropical islands and 2400 cays, most uninhabited, and all fringed by spectacular coral and fathomless ocean trenches. From the grit and bustle of funky Nassau to the vast mangroves of Andros, there's an astonishing array of beaches, reefs, forests and historic towns to be discovered, all within the compass of an hour's flight.</p>
+            <p>The Bahamas is an inescapably pricey destination but whether sailing around the Abacos’ history-filled Loyalist Cays, partying at Paradise Island’s Atlantis resort, swimming with wild pigs or lounging on Eleuthera’s pink-sand beaches, there’s likely a Bahamian island to match most every water- and sand-based compulsion, all framed by a backdrop of gorgeous, mesmerizing blue.</p>
+            <p>The Bahamian locals are a laid-back lot and a night spent at a fish fry with a rum punch in hand is not to be missed.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!--End of Modal Content-->
+
+  <!--End of first row of cards-->  
+
+  <!--Start of title for new section-->
+  <section>
+    <!--Container for description-->
+    <div class="desc-container">
+      <!--Container for text content-->
+      <div class="desc-text-container">
+        <h2 id="SA">Welcome To South America</h2>
+        <p>South America is made for travelers looking to delve deep into incredibly diverse cultures and explore the outdoors. The biggest draws to the continent are the Galápagos Islands, Iguazu Falls, Machu Picchu and, of course, Patagonia. Andean peaks, Amazonian rainforest, Patagonian glaciers, Incan ruins, colonial towns, white-sand beaches and vertiginous nightlife: the wonders of South America set the stage for incredible adventures. </p>
+      </div>
+    </div>
+  </section>
+
+  <!--End of title for new section-->
+
+  <!--Start of second row of cards-->
+  <article>
+    <!--Container for grid of cards-->
+    <div class="grid">
+      <!--First card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/brazil.jpg" alt="Arial View of Rio de Janeiro image" />
+          <div class="card-content">
+            <h1 class="card-header">Brazil</h1>
+            <p class="card-text">Rio de Janeiro</p>
+            <!--Button for fifth modal-->
+            <button class="modal-open" data-modal="modal5">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Second card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/argentina.jpg" alt="Perito Moreno Glacier image" />
+          <div class="card-content">
+            <h1 class="card-header">Argentina</h1>
+            <p class="card-text">Perito Moreno Glacier</p>
+            <!--Button for sixth modal-->
+            <button class="modal-open" data-modal="modal6">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Third card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/peru.jpg" alt="Machu Picchu image" />
+          <div class="card-content">
+            <h1 class="card-header">Peru</h1>
+            <p class="card-text">Machu Picchu</p>
+            <!--Button for seventh modal-->
+            <button class="modal-open" data-modal="modal7">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Fourth card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/colombia.jpg" alt="Cocora Valley image" />
+          <div class="card-content">
+            <h1 class="card-header">Colombia</h1>
+            <p class="card-text">Cocora Valley</p>
+            <!--Button for eighth modal-->
+            <button class="modal-open" data-modal="modal8">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+    
+  <!--Start of Modal Content for second row of cards-->    
+
+  <!--Fifth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal5">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Brazil</h2> 
+          <div class="modal-body">
+            <h3>One of the world's most captivating places, Brazil is a country of powdery white-sand beaches, verdant rainforests and wild, rhythm-filled metropolises. Brazil's attractions extend from frozen-in-time colonial towns to otherworldly landscapes of red-rock canyons, thundering waterfalls and coral-fringed tropical islands.</h3>
+            <h4>Landscapes & Biodiversity</h4>
+            <p>One of the world's most captivating places, Brazil is a country of powdery white-sand beaches, verdant rainforests and wild, rhythm-filled metropolises. Brazil's attractions extend from frozen-in-time colonial towns to otherworldly landscapes of red-rock canyons, thundering waterfalls and coral-fringed tropical islands. Add to that, Brazil's biodiversity: legendary in scope, its diverse ecosystems boast the greatest collection of plant and animal species found anywhere on earth. There are countless places in Brazil where you can spot its iconic species, which Include toucans, scarlet macaws, howler monkeys, capybaras, pink dolphins, sea turtles and many more.</p>
+            <h4>Days of Adventure</h4>
+            <p>Brazil offers big adventures for travelers with budgets large and small. There's horseback riding and wildlife-watching in the Pantanal, kayaking flooded forests in the Amazon, ascending rocky cliff tops to panoramic views, whale-watching off the coast, surfing stellar breaks off palm-fringed beaches and snorkeling crystal-clear rivers or coastal reefs – all are part of the great Brazilian experience. No less entrancing is the prospect of doing nothing, aside from sinking toes into warm sands and soaking up a glorious stretch of beach, with a caipirinha – Brazil's national cocktail – in hand.</p>
+            <h4>The Rhythms of Brazil</h4>
+            <p>Wherever there's music, that carefree lust for life tends to appear – whether dancing with cariocas at Rio's atmospheric samba clubs or following powerful drumbeats through the streets of Salvador. There's the dancehall forró of the Northeast, twirling carimbó of the Amazon, scratch-skilled DJs of São Paulo and an endless variety of regional sounds that extends from the twangy country music of the sunbaked sertanejo to the hard-edged reggae of Maranhão.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  
+  <!--Sixth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal6">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Argentina</h2> 
+          <div class="modal-body">
+            <h3>Beautiful, defiant and intense, Argentina seduces with its streetside tango, wafting grills, fútbol (soccer), gaucho culture and the mighty Andes. It's one formidable cocktail of wanderlust.</h3>
+            <h4>Natural Wonders</h4>
+            <p>From mighty Iguazú Falls in the subtropical north to the thunderous, crackling advance of the Glaciar Perito Moreno in the south, Argentina is home to a vast natural wonderland. Diversity is a big part of it. The country that boasts the Andes’ highest snowbound peaks is also home to rich wetlands, rust-hued desert, deep-blue lakes, lichen-clad Valdivian forests and Patagonia's arid steppes. Wildlife comes in spectacular variety, from penguins and flamingos to capybaras, giant anteaters, whales, guanaco herds and more. In this vast country, stunning sights abound and big adventure awaits.</p>
+            <h4>Argentine Culture</h4>
+            <p>Cultural activities abound here. Tango is possibly Argentina’s greatest contribution to the outside world. The steamy dance has been described as ‘making love in the vertical position.’ And what about fútbol (soccer)? Argentines are passionately devoted to this sport and, if you're a fan, chanting and stomping alongside other stadium fanatics should definitely be in your plans. Add a distinctive Argentine take on literature, cinema, music and arts, and you have a rich, edgy culture – part Latin American and part European – that you can’t help but fall in love with.</p>
+            <h4>City Life</h4>
+            <p>Arriving in Buenos Aires is like jumping aboard a moving train. The modern metropolis whizzes by, alive with street life from busy sidewalk cafes, to hush parks carpeted in purple jacaranda blooms in springtime. Stylish porteños (residents of Buenos Aires) savor public life – whether it's sharing mate (a tea-like beverage) on Sunday in the park or gelato under handsome early-20th-century stone facades. There are heaps of bookstores, creative boutiques and gourmet eats. Buenos Aires isn't the only stunner – Córdoba, Salta, Mendoza and Bariloche each have their unique personalities and unforgettable attractions, so don't miss them.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Seventh Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal7">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Peru</h2> 
+          <div class="modal-body">
+            <h3>Peru is as complex as its most intricate and exquisite weavings. Festivals mark ancient rites, the urban vanguard fuels innovation and nature bestows splendid diversity.</h3>
+            <h4>All Things Ancient</h4>
+            <p>Visitors flock to the glorious Inca citadel of Machu Picchu, yet this feted site is just a flash in a 5000-year history of Peruvian settlement. Explore the dusty remnants of Chan Chan, the largest pre-Columbian ruins in all the Americas. Fly over the puzzling geoglyphs etched into the arid earth at Nazca. Or venture into the rugged wilds that surround the enduring fortress of Kuélap. Lima’s great museums reveal in full detail the sophistication, skill and passion of these lost civilizations. Visit remote communities and see how old ways live on. Immerse yourself, and you'll leave Peru a little closer to the past.</p>
+            <h4>Adventure</h4>
+            <p>From downtown Lima to smack-dab in the middle of nowhere, this vast country is a paradise for the active traveler. Giant sand dunes, chiseled peaks and Pacific breaks lie just a few heartbeats away from the capital’s rush-hour traffic, and all the usual suspects – rafting, paragliding, zip-lines and bike trails – are present. Spot scarlet macaws in the Amazon or catch the sunset over ancient ruins. Take this big place in small bites and don't rush. Delays happen. Festivals can swallow you whole for days. And you'll realize: in Peru the adventure usually lies in getting there.</p>
+            <h4>Life is a Carnival</h4>
+            <p>Welcome to a place of mythical beliefs where ancient pageants unwind to the tune of booming brass bands. Peru's rich cultural heritage is never more real and visceral than when you are immersed streetside in the swirling madness of a festival. Deities of old are reincarnated as Christian saints, pilgrims climb mountains in the dead of night and icons are paraded through crowded plazas as once were the mummies of Inca rulers. History is potent here and still pulsing, and there is no better way to experience it.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Eigth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal8">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Colombia</h2> 
+          <div class="modal-body">
+            <h3>Soaring Andean summits, unspoiled Caribbean coast, enigmatic Amazon jungle, cryptic archaeological ruins and cobbled colonial communities. Colombia boasts all of South America's allure, and more.</h3>
+            <h4>Diverse Landscapes</h4>
+            <p>Colombia's equatorial position affords it a diversity of landscapes matched by few countries. A slight tinkering in altitude takes you from sun-toasted Caribbean sands to coffee-strewn, emerald-green hilltops in the Zona Cafetera. Continue to climb and there's Bogotá, the bustling cradle of Colombia and third-highest capital city in the world. Throw in another few thousand meters and you'll find snowcapped peaks, high-altitude lakes and the eerie, unique vegetation of the páramo (high-mountain plains). The bottom drops out as the Andes give way to Los Llanos, a 550,000-sq-km swath of tropical grasslands shared with Venezuela, often called the Serengeti of South America.</p>
+            <h4>Extraordinary Culture</h4>
+            <p>A wealth of ancient civilizations left behind a fascinating spread of archaeological and cultural sites throughout Colombia. The one-time Tayrona capital, Ciudad Perdida, built between the 11th and 14th centuries, is one of the continent's most mysterious ancient cities, arguably second only to Machu Picchu. Even more shrouded in mystery is San Agustín, where more than 500 life-sized ancient sculpted statues – some 5000 years old and of enigmatic origin – dot the surrounding countryside. And then there's Tierradentro, where elaborate underground tombs scooped out by an unknown people add even more mystique to Colombia's past.</p>
+            <h4>Historical Architecture</h4>
+            <p>Led by Cartagena's extraordinarily preserved old city, Colombia offers an off-the-radar treasure trove of wonderfully photogenic cobblestoned towns and villages that often feel like they hail from a different century. Unweathered Barichara and sleepy Mompós feel like movie sets, while whitewashed Villa de Leyva appears stuck in 16th-century quicksand. Colombia's panorama of postcard-perfect pueblos are among the best preserved on the continent; just don't explore them in high heels!</p>
+
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!--End of Modal Content-->
+
+  <!--End of second row of cards-->
+
+  <!--Start of footer-->
+  <footer>
+    <!--Container for footer-->
+    <div class="footer-container">
+      <div class="footer">
+        <!--List for first footer section-->
+        <div class="footer-heading footer-1">
+          <h2>Destinations</h2>
+          <!--Navigation links to other pages-->
+          <a href="asia.html#ASIA">Asia</a>
+          <a href="asia.html#SA">Southeast Asia</a>
+          <a href="america.html#NA">North America</a>
+          <a href="america.html#SA">South America</a>
+          <a href="europe.html#EURO">Europe</a>         
+        </div>
+        <!--List for second footer section-->
+        <div class="footer-heading footer-2">
+          <h2>Interests</h2>
+          <!--Dummy Navigation links to future pages-->
+          <a href="#">Beaches And Islands</a>
+          <a href="#">Family Trips</a>
+          <a href="#">Honeymoon</a>
+          <a href="#">Food And Drink</a>
+          <a href="#">Wildlife And Nature</a>
+          <a href="#">Festivals</a>         
+        </div>
+        <!--List for third footer section-->
+        <div class="footer-heading footer-3">
+          <h2>Social Media</h2>
+          <!--Navigation icons leading to social media profiles-->
+          <div class="icons">
+            <!--Icons imported from font-awesome-->
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          </div>              
+        </div>
+        <!--Sign up section-->
+        <div class="footer-email-form">
+          <h2>Join Us</h2>
+          <!--Text box to input email to sign up-->
+          <input type="email" placeholder="Enter your email" id="footer-email">
+          <!--Button to sign up-->
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End of footer-->
+
+<!--Javascript for modals to work-->
+<script src="./js/america.js"></script>
+</body>
+</html>

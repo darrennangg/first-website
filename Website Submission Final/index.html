@@ -1,0 +1,283 @@
+<!--Specify that it is a html document -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Let the browser know that it is to use utf-8 encoding -->
+	<meta charset="UTF-8">
+	<!--Dimensions of the site according to device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Title of website-->
+	<title>Portalble Planet</title>
+	<!--CSS Stylesheet-->
+	<link rel="stylesheet" href="./css/index.css">
+	<!--Imported font-awesome script for icons-->
+	<script src="https://kit.fontawesome.com/f773cf4725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--Start of navigation bar-->
+	<nav>
+		<!--Menu-->
+		<input type="checkbox" id="check">
+		<!--Imported Menu bar from font awesome -->
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<!--Site Logo and navigation to homepage which is current page-->
+		<a class="homelogo" href="index.html"><label class="logo">Portalble Planet</label></a>
+		<!--List of navigation links to other pages of the site-->
+		<ul>
+			<li><a class="active" href="#">HOME</a></li>
+			<li><a href="asia.html">ASIA</a></li>
+			<li><a href="america.html">AMERICA</a></li>
+			<li><a href="europe.html">EUROPE</a></li>
+			<li><a href="events.html">EVENTS</a></li>
+		</ul>
+	</nav>
+	<!--End of navigation bar-->
+
+	<!--Start of image slider-->
+	<header>
+		<!--Container for image slider-->
+		<div class="slider">
+			<!--First slide and its content-->
+			<div class="slide current">
+				<div class="content">
+					<h1>Never Stop Travelling</h1>
+					<p>Don't let anyone or the world stop you from exploring the beauty of our planet. Start 
+					   exploring and begin planning for your next trip!</p>
+				</div>
+			</div>
+			<!--Second slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Asia</h1>
+					<p>Earth's largest and most populous continent, from breath-taking nature to incredible
+					   man-made structures, you'll be sure to find anything here on this beautiful continent!</p>
+				</div>
+			</div>
+			<!--Third slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>America</h1>
+					<p>There's always something here for everyone, from some of the most popular shopping malls and districts, luxe accommodations to natural wonders, theme parks, beaches, and much more, there is nothing that America cannot provide for you to explore!</p>
+				</div>
+			</div>
+			<!--Fourth slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Europe</h1>
+					<p>Known for their rich and vast history in the past, Europe offers you a journey to
+					   explore their extravagant castles and places as well as their spectacular scenery of 
+					   their stunning landscape of greenery and glaciers.</p>
+				</div>
+			</div>
+			<!--Last slide and its content-->
+			<div class="slide">
+				<div class="content">
+					<h1>Current Events</h1>
+					<p>Don't miss out on the most popular events that are happening worldwide right now by
+					   visiting our Events tab to ensure you get the best experience during your trip!</p>
+				</div>
+			</div>
+		</div>
+		<!--Imported buttons from font-awesome for previous and next slide buttons in slider-->
+		<div class="buttons">
+			<button id="prev"><i class="fas fa-arrow-left"></i></button>
+			<button id="next"><i class="fas fa-arrow-right"></i></button>
+		</div>
+		<!--Javascript for image slider to function-->
+		<script src="./js/index.js"></script>
+	</header>
+	<!--End of slider-->
+
+	<!--Start of section title text-->
+    <section>
+    	<!--Container for title text-->
+    	<div class="desc-container">
+    		<div class="desc-text-container">
+          		<h2>Most Popular Countries Worldwide</h2>
+       		</div>
+        </div>
+    </section>
+    <!--End of section title text-->
+
+    <!--Start of cards-->
+    <article>
+    	<!--Container for grid of cards-->
+    	<div class="grid">
+    		<!--First card-->
+    		<!--Container for card-->
+    		<div class="grid-item">
+    			<!--Content of card including image and text-->
+          		<div class="card">
+          			<img class="card-img" src="media/images/indexfrance.jpg" alt="Eiffel Tower,France image"/>
+            		<div class="card-content">
+              			<h1 class="card-header">France</h1>
+              			<!--Button navigating to other page-->
+              			<a href="europe.html#france"><button class="modal-open">Visit</button></a>
+             		</div>
+          		</div>
+       		</div>
+         	<!--Second card-->
+         	<!--Container for card-->
+       		<div class="grid-item">
+       			<!--Content of card including image and text-->
+          		<div class="card">
+           			<img class="card-img" src="media/images/indexspain.jpg" alt="Skyline of Barcelona, Spain image" />
+            		<div class="card-content">
+              			<h1 class="card-header">Spain</h1>
+              			<!--Button navigating to other page-->
+             			<a href="europe.html#spain"><button class="modal-open">Visit</button></a>
+             		</div>
+          		</div>
+       		</div>
+    		<!--Third card-->
+    		<!--Container for card-->
+       		<div class="grid-item">
+       			<!--Content of card including image and text-->
+          		<div class="card">
+         			<img class="card-img" src="media/images/indexusa.jpg" alt="Bustling Street of New York,United States image"/>
+            		<div class="card-content">
+              			<h1 class="card-header">USA</h1>
+              			<!--Button navigating to other page-->
+              			<a href="america.html#usa"><button class="modal-open">Visit</button></a>
+             		</div>
+          		</div>
+       		</div>
+       		<!--Fourth card-->
+       		<!--Container for card-->
+      		<div class="grid-item">
+      			<!--Content of card including image and text-->
+          		<div class="card">
+          			<img class="card-img" src="media/images/indexchina.jpg" alt="Huangshan Shi Mountains,China image"/>
+            		<div class="card-content">
+              			<h1 class="card-header">China</h1>
+              			<!--Button navigating to other page-->
+              			<a href="asia.html#china"><button class="modal-open">Visit</button></a>
+             		</div>
+          		</div>
+       		</div>
+        </div>
+    </article>
+    <!-- End of cards-->
+
+    <!--Start of blog-->
+    <section class="blog">
+    	<!--Container for blog section-->
+    	<div class="blog-container">
+    		<!--Header-->
+    		<h2>Popular Travel Articles</h2>
+    		
+    		<!--Main section-->
+    		<main>
+    			<!--First blog post-->
+    			<div class="single-blog">
+    				<img src="media/images/article1.jpg" alt="Japan cherry blossom tree image">
+    				<div class="blog-content">
+    					<h3>The best time to travel to Japan <span>Asia</span></h3>
+    					<p>By Darren | Nov 05, 2020</p>
+    					<a href="#" class="btn">Read More</a>
+    				</div>
+    			</div>
+    			<!--Second blog post-->
+    			<div class="single-blog">
+    				<img src="media/images/article2.jpg" alt="An image of a water town in Europe">
+    				<div class="blog-content">
+    					<h3>Top 10 places to see in Italy <span>Europe</span></h3>
+    					<p>By Bob | Dec 03, 2019</p>
+    					<a href="#" class="btn">Read More</a>
+    				</div>
+    			</div>
+    			<!--Third blog post-->
+    			<div class="single-blog">
+    				<img src="media/images/article3.jpg" alt="Night market in taiwan image">
+    				<div class="blog-content">
+    					<h3>Night markets you MUST vist while in Taiwan <span>Asia</span></h3>
+    					<p>By Darius | Apr 11, 2020</p>
+    					<a href="#" class="btn">Read More</a>
+    				</div>
+    			</div>
+    			<!--Fourth blog post-->
+    			<div class="single-blog">
+    				<img src="media/images/article4.jpg" alt="Korean food image">
+    				<div class="blog-content">
+    					<h3>Food you can't miss here in South Korea <span>Asia</span></h3>
+    					<p>By Tiffany | Aug 18 , 2020</a></p>
+    					<a href="#" class="btn">Read More</a>
+    				</div>
+    			</div>
+    			<!--Fifth blog post-->
+    			<div class="single-blog">
+    				<img src="media/images/article5.jpg" alt="Australia wildlife image">
+    				<div class="blog-content">
+    					<h3>Adorable wildlife you just have to say hello!<span>Australia</span></h3>
+    					<p>By Tiffany | July 17, 2019</p>
+    					<a href="#" class="btn">Read More</a>
+    				</div>
+    			</div>
+    			<!--Sixth blog post-->
+    			<div class="single-blog">
+    				<img src="media/images/article6.jpg" alt="Moraine Lake image">
+    				<div class="blog-content">
+    					<h3>The beauty of Moraine Lake, Canada<span>America</span></h3>
+    					<p>By Daffany | Feb 17,2021</p>
+    					<a href="#" class="btn">Read More</a>
+    				</div>
+    			</div>    			    			    			    			    			
+	   		</main>
+	   	</div>	
+    </section>
+    <!--End of blog-->
+	
+	<!--Start of footer-->
+	<footer>
+		<!--Container for footer-->
+		<div class="footer-container">
+			<div class="footer">
+				<!--List for first footer section-->
+				<div class="footer-heading footer-1">
+					<h2>Destinations</h2>
+					<!--Navigation links to other pages-->
+					<a href="asia.html#ASIA">Asia</a>
+					<a href="asia.html#SA">Southeast Asia</a>
+					<a href="america.html#NA">North America</a>
+					<a href="america.html#SA">South America</a>
+					<a href="europe.html#EURO">Europe</a>					
+				</div>
+				<!--List for second footer section-->
+				<div class="footer-heading footer-2">
+					<h2>Interests</h2>
+					<!--Dummy Navigation links to future pages-->
+					<a href="#">Beaches And Islands</a>
+					<a href="#">Family Trips</a>
+					<a href="#">Honeymoon</a>
+					<a href="#">Food And Drink</a>
+					<a href="#">Wildlife And Nature</a>
+					<a href="#">Festivals</a>					
+				</div>
+				<!--List for third footer section-->
+				<div class="footer-heading footer-3">
+					<h2>Social Media</h2>
+					<!--Navigation icons leading to social media profiles-->
+					<div class="icons">
+						<!--Social Media Icons imported from font-awesome-->
+						<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+						<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+						<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+					</div>							
+				</div>
+				<!--Sign up section-->
+				<div class="footer-email-form">
+					<h2>Join Us</h2>
+					<!--Text box to input email to sign up-->
+					<input type="email" placeholder="Enter your email" id="footer-email">
+					<!--Button to sign up-->
+					<input type="submit" value="Sign Up" id="footer-email-btn">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--End of footer-->
+</body>
+</html>

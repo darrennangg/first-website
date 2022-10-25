@@ -1,0 +1,502 @@
+<!--Specify that it is a html document -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Let the browser know that it is to use utf-8 encoding -->
+  <meta charset="UTF-8">
+  <!--Dimensions of the site according to device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Title of website-->
+  <title>Portalble Planet | Asia</title>
+  <!--CSS Stylesheet-->
+  <link rel="stylesheet" href="./css/asia.css">
+  <!--Imported font awesome script for icons-->
+  <script src="https://kit.fontawesome.com/f773cf4725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Start of navigation bar-->
+  <nav>
+    <!--Menu-->
+    <input type="checkbox" id="check">
+    <!--Imported Menu bar from font awesome -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!--Site Logo and navigation to homepage which is current page-->
+    <a class="homelogo" href="index.html"><label class="logo">Portalble Planet</label></a>
+    <!--List of navigation links to other pages of the site-->
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a class="active" href="#">ASIA</a></li>
+      <li><a href="america.html">AMERICA</a></li>
+      <li><a href="europe.html">EUROPE</a></li>
+      <li><a href="events.html">EVENTS</a></li>
+    </ul>
+  </nav>
+  <!--End of navigation bar-->
+
+  <!--Start of banner image-->
+  <header>
+    <!--Container for banner-->
+    <div class="banner-container">
+      <img src="media/images/asia1.jpg" />
+      <div class="text-container">
+        <h1>Asia</h1>
+      </div>
+    </div>
+  </header>
+  <!--End of banner image-->
+
+  <!--Start of welcome description-->
+  <section>
+    <!--Container for description-->
+    <div class="desc-container">
+      <!--Container for text content-->
+      <div class="desc-text-container">
+        <h2 id="ASIA">Welcome To Asia</h2>
+        <p>Asia is a continent so full of intrigue, adventure, solace, and spirituality that it has fixated
+           and confounded travellers for centuries. Known for their rich history from various ancient civilisations, ancient wonders and sacred spaces are abound across the continent, from the Great Wall of China and the temples of Angkor to lesser-known marvels in Myanmar, Nepal and Afghanistan. Coupled with their beautiful vast landscapes such as the majestic Mekong River to the stunning snow-capped mountains of Mt Fuji along with their wide variety of delicious cuisines from India's red hot curries to China's juicy dumplings, visiting Asia is an experience you would not regret and forget!</p>
+      </div>
+    </div>
+  </section>
+  <!--End of welcome description-->
+
+  <!--Start of first row of cards-->
+  <article>
+    <!--Container for grid of cards-->
+    <div class="grid">
+      <!--First card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/japan.jpg" alt="Mount Fuji image" />
+          <div class="card-content">
+            <h1 class="card-header">Japan</h1>
+            <p class="card-text"> Mount Fuji </p>
+            <!--button for first modal-->
+            <button class="modal-open" data-modal="modal1">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Second card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/korea.jpg" alt="Myeongdong Market image" />
+            <div class="card-content">
+              <h1 class="card-header">Korea</h1>
+              <p class="card-text">Myeongdong Market, Seoul</p>
+              <!--button for second modal-->
+              <button class="modal-open" data-modal="modal2">Learn More</button>
+            </div>
+        </div>
+      </div>
+      <!--Third card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" id="china" src="media/images/china.jpg"  alt="Great Wall Of China image" />
+          <div class="card-content">
+            <h1 class="card-header">China</h1>
+            <p class="card-text">Great Wall Of China</p>
+            <!-- button for third modal -->
+            <button class="modal-open" data-modal="modal3">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Fourth card-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/maldives.jpg" alt="Skyline of a resort in Maldives image" />
+          <div class="card-content">
+            <h1 class="card-header">Maldives</h1>
+            <p class="card-text">Arial View Of A Resort</p>
+            <!--button for modal 4-->
+            <button class="modal-open" data-modal="modal4">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!--Start of Modal Content for first row of cards-->    
+
+  <!--First Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal1">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>Welcome to Japan</h2> 
+            <div class="modal-body">
+              <h3>Japan is truly timeless, a place where ancient traditions are fused with modern life as if it were the most natural thing in the world.</h3>
+              <h4>Traditional Culture</h4>
+              <p>On the surface Japan appears exceedingly modern, but travelling around it offers numerous opportunities to connect with the country's traditional culture. Spend the night in a ryokan (traditional Japanese inn), sleeping on futons and tatami mats, and padding through well-worn wooden halls to the bathhouse (or go one step further and sleep in an old farmhouse). Meditate with monks or learn how to whisk bitter matcha (powdered green tea) into a froth. From the splendour of a Kyoto geisha dance to the spare beauty of a Zen rock garden, Japan has the power to enthral even the most jaded traveller.</p>
+              <h4>Food</h4>
+              <p>Wherever you are in Japan, it seems, you're never far from a great meal. Restaurants often specialise in just one dish – perhaps having spent generations perfecting it – and pay close attention to every stage, from sourcing the freshest, local ingredients to assembling the dish attractively. And as you'll quickly discover, Japanese cuisine has great regional variations. The hearty hotpots of the mountains are, for example, dramatically different from the delicate sushi for which the coast is famous. It's also intensely seasonal, meaning you can visit at a different time of year and experience totally new tastes.</p>
+              <h4>Outdoors</h4>
+              <p>Japan is a long and slender, highly volcanic archipelago. It's over two-thirds mountains, with bubbling hot springs at every turn. In the warmer months there is excellent hiking, through cedar groves and fields of wildflowers, up to soaring peaks and ancient shrines (the latter founded by wandering ascetics). In the winter, all this is covered with snow and the skiing is world class. (And if you've never paired hiking or skiing with soaking in onsen, you don't know what you've been missing.) Meanwhile in the southern reaches, there are tropical beaches for sunning, snorkelling and diving.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  
+  <!--Second Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal2">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to South Korea</h2>
+          <div class="modal-body">
+            <h3>South Korea offers the traveller a dazzling range of experiences, beautiful landscapes and 5000 years of culture and history.</h3>
+            <h4>Urban Buzz</h4>
+            <p>Korea might be known as the Land of the Morning Calm, but dive into its capital Seoul, the powerhouse of Asia’s third-largest economy, and serenity may be the last thing you’ll perceive. This round-the-clock city is constantly in motion, with a work-hard, play-hard mentality that epitomises the nation’s indefatigable, can-do spirit. You can hardly turn a corner without stumbling across a helpful tourist information booth, a bustling subway station or a taxi in this multifaceted metropolis where meticulously reconstructed palaces rub shoulders with teeming night markets and dramatically modern architecture.</p>
+            <h4>Idyllic Countryside</h4>
+            <p>South Korea’s compact size and superb transport infrastructure mean that tranquillity is always within easy reach of urban sprawl. Hike to the summits of craggy mountains – some of which transform into ski slopes come winter – enveloped within densely forested national parks. Get further off the beaten path than you thought possible by sailing to remote islands, where farming and fishing folk welcome you into their homes or simple seafood cafes. Gaze up at the distant stars from serene villages surrounded by rice fields, sleeping in rustic hanok (traditional wooden house) guesthouses.</p>
+            <h4>Festivals & Food</h4>
+            <p>Rest assured the ROK also knows how to rock. A packed calendar of festivals and events means there’s almost always a celebration of some sort to attend wherever you are – it might be Boryeong for its mud fest, or Gwangju for its Biennale or its annual salute to that most Korean of foods: kimchi. Koreans are proud of their culinary culture and rightly so – there's a tantalising array of dishes, flavours, aromas and textures in the local cuisine, to be washed down with plenty of toasting involving a head-spinning array of alcoholic concoctions.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Third Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal3">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to China</h2> 
+          <div class="modal-body">
+            <h3>The name alone makes you want to get packing. It's going places, so jump aboard, go along for the ride and see where it's headed.</h3>
+            <h4>Breathtaking Antiquity</h4>
+            <p>Its modern face is dazzling, but China is no one-trick pony. The world's oldest continuous civilisation isn't all smoked glass and brushed aluminium, and while you won't be tripping over artefacts – three decades of round-the-clock development and rash town planning have taken their toll – rich seams of antiquity await. Serve it all up according to taste: collapsing sections of the Great Wall, temple-topped mountains, villages that time forgot, languorous water towns, sublime Buddhist grottoes and ancient desert forts. Pack a well-made pair of travelling shoes and remember the words of Laotzu: 'a journey of a thousand miles begins with a single step'.</p>
+            <h4>Stupendous Scenery</h4>
+            <p>Few countries do the great outdoors like the Middle Kingdom. China's landscapes span the range from alpha to omega: take your pick from the sublime sapphire lakes of Tibet or the impassive deserts of Inner Mongolia, island-hop in Hong Kong or cycle between fairy-tale karst pinnacles around Yangshuo. Swoon before the rice terraces of the south, take a selfie among the gorgeous yellow rapeseed by Qinghai Lake, or hike the Great Wall as it meanders across mountain peaks. Get lost in green forests of bamboo or, when your energy fails you, flake out on a distant Hainan beach and listen to the thud of falling coconuts.</p>
+            <h4>Cuisine</h4>
+            <p>The Chinese live to eat, and with 1.4 billion food-loving people to feed, coupled with vast geographic and cultural variations in a huge land, expect your taste buds to be tantalised, tested and treated. Wolf down Peking duck in Beijing, melt over a Chongqing hotpot or grab a seasoned ròujiāmó (shredded pork in a bun) before climbing Hua Shan. Gobble down a steaming bowl of Lanzhou noodles in a Silk Road street market, raise the temperature with some searing Hunan fare, or flag down the dim sum trolley down south. Follow your nose in China and you won't want to stop travelling.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Fourth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal4">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Maldives</h2> 
+          <div class="modal-body">
+            <h3>Unrivalled luxury, stunning white-sand beaches and an amazing underwater world make Maldives an obvious choice for a true holiday of a lifetime.</h3>
+            <h4>Unbelievable Beaches</h4>
+            <p>Maldives is home to perhaps the best beaches in the world; they’re on almost every one of the country’s nearly 1200 islands and are so consistently perfect that it’s hard not to become blasé about them. While some beaches may boast softer granules than others, the basic fact remains: you won't find consistently whiter-than-white powder sand and luminous cyan-blue water like this anywhere else on earth. This fact alone is enough to bring well over a million people a year to this tiny, remote and otherwise little-known Indian Ocean paradise.</p>
+            <h4>Resorts for Everyone</h4>
+            <p>Every resort in Maldives is its own private island, and with over 100 to choose from the only problem is selecting where you want to stay. At the top end, the world’s most exclusive hotel brands compete with each other to attain ever-greater heights of luxury, from personal butlers and private lap pools to in-room massages and pillow menus. It’s not surprising that honeymooners and those seeking a glamorous tropical getaway have long had the country at the very top of their wish lists. But there’s also plenty of choice beyond the five- and six-star resorts.</p>
+            <h4>Underwater World</h4>
+            <p>With some of the best diving and snorkelling in the world, the clear waters of Maldives are a magnet for anyone with an interest in marine life. The richness and variety is astonishing; dazzling coral walls, magnificent caves and schools of brightly coloured tropical fish await you when you get down to the reef. In deeper waters lurk manta rays, turtles, sharks and even the world’s largest fish, the whale shark. The best bit? The water is so warm many people don’t even wear a wetsuit.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!--End of Modal Content-->
+
+  <!--End of first row of cards-->  
+
+  <!--Title of new section-->
+  <section>
+    <div class="desc-container">
+      <div class="desc-text-container">
+        <h2 id="SA">Southeast Asia</h2>
+      </div>
+    </div>
+  </section>
+
+  <!--Start of second row of cards-->
+  <article>
+    <!--Container for grid of cards-->
+    <div class="grid">
+      <!--First card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/singapore.jpg" alt="Marina Bay Sands image" />
+          <div class="card-content">
+            <h1 class="card-header">Singapore</h1>
+            <p class="card-text">Marina Bay Sands</p>
+            <!--Button for fifth modal-->
+            <button class="modal-open" data-modal="modal5">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Second card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/indonesia.jpg" alt="Padar Island image" />
+          <div class="card-content">
+            <h1 class="card-header">Indonesia</h1>
+            <p class="card-text">Padar Island</p>
+            <!--Button for sixth modal-->
+            <button class="modal-open" data-modal="modal6">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Third card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/thailand.jpg" alt="Phi Phi Islands image" />
+          <div class="card-content">
+            <h1 class="card-header">Thailand</h1>
+            <p class="card-text">Phi Phi Islands</p>
+            <!--Button for seventh modal-->
+            <button class="modal-open" data-modal="modal7">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <!--Fourth card of second row-->
+      <!--Container for card-->
+      <div class="grid-item">
+        <!--Content of card including image and text-->
+        <div class="card">
+          <img class="card-img" src="media/images/vietnam.jpg" alt="Ha Long Bay image" />
+          <div class="card-content">
+            <h1 class="card-header">Vietnam</h1>
+            <p class="card-text">Ha Long Bay</p>
+            <!--Button for eighth modal-->
+            <button class="modal-open" data-modal="modal8">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+ 
+  <!--Start of Modal Content for second row of cards-->    
+
+  <!--Fifth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal5">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Singapore</h2> 
+          <div class="modal-body">
+            <h3>Capitalising on its melting pot of cultures, Singapore is finally getting some spark, and is fast becoming one of Asia’s hit-list destinations.</h3>
+            <h4>The Island of Feasting</h4>
+            <p>Food in Singapore is taken very seriously. From cheap hawker fare to Michelin-starred fine dining, food-enamoured Singaporeans will line up for it, Instagram the hell out of it and passionately debate whether it is ‘die, die, must try’ – Singlish slang for ‘to die for’. Don’t fret about finding a place to chow down, as each neighbourhood is home to local hawker centres and coffeeshops dishing up some of the island’s best meals for just a couple of bucks. Simply follow your nose or join the longest queue – whatever morsels lie at the end, they are almost guaranteed to be scrumptious.</p>
+            <h4>A Green City</h4>
+            <p>The concrete jungles that once dominated Singapore’s skyline are slowly giving way to green skyscrapers, which look more like living ecosystems than business hubs. Fervently working towards its ‘City in a Garden’ dream, the nation is ploughing money into becoming more sustainable and, well, green. Head out of town a little and you’ll find plenty of walking trails, treetop jungle bridges, wildlife galore and the city's green jewel, the Unesco World Heritage–listed Singapore Botanic Gardens: these are the lungs of Singapore.</p>
+            <h4>Shopping Frenzy</h4>
+            <p>When the sweltering outdoor heat gets too much, Singaporeans love ducking inside for a spot of retail therapy and a good dose of air-conditioning. Orchard Rd is the queen of shopping malls: with all the high-street brands, plenty of high-fashion houses, and a few discount outlets thrown into the mix, everyone’s needs (and more often wants) are catered for here. If you prefer your shopping a little less mass-market, head out to local neighbourhoods for independent designers, quirky art galleries, bustling markets, Chinese medicines, Persian carpets and a sari or two.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  
+  <!--Sixth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal6">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Indonesia</h2> 
+          <div class="modal-body">
+            <h3>This beguiling nation of over 17,000 islands has massive potential for adventures. It's hard to beat Indonesia for the sheer range of experiences on offer.</h3>
+            <h4>Rich Diversity</h4>
+            <p>The world’s fourth most populous country is like 100 countries melded into one: a kaleidoscope of a nation that sprawls along the equator for 5000km. Indonesia is a land of so many cultures, peoples, animals, customs, plants, sights, art and foods that it defies homogenisation. The people are as radically different from each other as the variety of landscapes you'll see, with every island a unique blend. Over time, deep and rich cultures have evolved, from the mysteries of the spiritual Balinese to the ancient animist belief system of the Asmat people of Papua.</p>
+            <h4>Beaches & Volcanoes</h4>
+            <p>Venturing across Indonesia you’ll see a wonderfully dramatic landscape as diverse as anywhere on the planet. Sulawesi's wildly multi-limbed coastline embraces white-sand beaches and diving haunts, while Sumatra is contoured by a legion of nearly 100 volcanoes marching off into the distance, several capable of erupting at any time. Bali's beaches are the stuff of legend, but you don't have to travel far to find even more beautiful and less touristed stretches of sand in Nusa Tenggara. The Banda islands in Maluku, Derawan in Kalimantan and Pulau Weh off Sumatra all offer superb beaches too.</p>
+            <h4>Great Adventure</h4>
+            <p>This intoxicating land offers some of the last great adventures on earth. Sitting in the open door of a train whizzing across Java, gazing out at an empty sea while on a ship bound for the Kei Islands, hanging on to the back of a scooter on Flores, rounding the mystifying corner of an ancient West Timor village or simply trekking through wilderness you’re sure no one has seen before.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Seventh Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal7">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Thailand</h2> 
+          <div class="modal-body">
+            <h3>Friendly and food-obsessed, hedonistic and historic, cultured and curious, Thailand tempts visitors with a smile as golden as the country's glittering temples and tropical beaches.</h3>
+            <h4>A Bountiful Table</h4>
+            <p>Adored around the world, Thai cuisine expresses fundamental aspects of Thai culture: it is generous, warm, refreshing and relaxed. Thai dishes rely on fresh, local ingredients – pungent lemongrass, searing chillies and plump seafood. A varied national menu is built around the four fundamental flavours: spicy, sweet, salty and sour. Roving appetites go on eating tours of Bangkok noodle shacks, seafood pavilions in Phuket, and Burmese market stalls in Mae Sot. Cooking classes reveal the simplicity behind the seemingly complicated dishes, and mastering the market is an important survival skill.</p>
+            <h4>Sacred Spaces</h4>
+            <p>The celestial world is a close confidant in this Buddhist nation, and religious devotion is colourful and ubiquitous. Gleaming temples and golden Buddhas frame both the rural and the urban landscape. Ancient banyan trees are ceremoniously wrapped in sacred cloth to honour the resident spirits, fortune-bringing shrines decorate humble homes as well as monumental malls, while garland-festooned dashboards ward off traffic accidents. Visitors can join the conversation through meditation retreats in Chiang Mai, religious festivals in northeastern Thailand, underground cave shrines in Kanchanaburi and Phetchaburi, and hilltop temples in northern Thailand.</p>
+            <h4>Fields & Forests</h4>
+            <p>Outside the cluttered cities and towns lies Thailand's rural heartland, a mix of rice paddies, tropical forests and villages where life is dominated by the rhythms of the agricultural clock. In the north, the forests and fields bump up against toothy blue mountains decorated with silvery waterfalls and honeycombed by deep caves. Down south, scraggy limestone cliffs poke out of the cultivated landscape like prehistoric skyscrapers, or emerge dramatically out of the turquoise sea. The usually arid northeast turns an emerald hue during the rainy season when tender green rice shoots carpet the landscape.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <!--Eigth Modal-->
+  <section>
+    <!--Container for modal and modal id for javascript to link respective data modal-->
+    <div class="modal" id="modal8">
+      <!--Modal Contents-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Welcome to Vietnam</h2> 
+          <div class="modal-body">
+            <h3>A land of staggering natural beauty and cultural complexities, of dynamic megacities and hill-tribe villages, Vietnam is both exotic and compelling.</h3>
+            <h4>Sensory Overload</h4>
+            <p>Unforgettable experiences are everywhere in Vietnam. There’s the sublime: gazing over a surreal seascape of limestone islands from the deck of a traditional junk in Halong Bay. The ridiculous: taking 10 minutes just to cross the street through a tsunami of motorbikes in Hanoi. The inspirational: exploring the world’s most spectacular cave systems in Phong Nha-Ke Bang National Park. The comical: watching a moped loaded with honking pigs weave a wobbly route along a country lane. And the contemplative: witnessing a solitary grave in a cemetery of thousands of war victims.</p>
+            <h4>History & Culture</h4>
+            <p>Vietnamese culture is complex, diverse and represents something of a history lesson. The nation's labyrinthine, teeming trading quarters are rich in indigenous crafts and reflect centuries-old mercantile influences. Ancient temples display distinctly Chinese influences in the north and Hindu origins in the south. Meanwhile the broad, tree-lined boulevards and grand state buildings that grace the capital date from the French colonial period. And it's impossible to forget Vietnam's pivotal position close to the epicentre of East Asian power and prosperity, for its cities' skylines are defined by clusters of glass-and-steel corporate HQs and sleek luxury hotels.</p>
+            <h4>A Culinary Superpower</h4>
+            <p>Thailand may contest the top spot, but in Southeast Asia nothing really comes close: Vietnamese food is that good. Incredibly subtle in its flavours and outstanding in its diversity, Vietnamese cooking is a fascinating draw for travellers – myriad street-food tours and cooking schools are testament to this. Geography plays a crucial role, with Chinese flavours influencing the soups of the north, spices sparking up southern cuisine, and herbs and complex techniques typifying the central coastline, rightly renowned as Vietnam’s epicurean hot spot. And up and down the country you can mingle with villagers, sample local dishes and sip rice wine in Vietnam's many regional markets.</p>
+          </div>
+          <!--Close button for modal-->
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <!--End of Modal Content-->
+
+  <!--End of second row of cards-->
+
+  <!--Highlights section-->
+  <section>
+  	<!--Highlights container-->
+  	<div class="highlights-container">
+  		<!--row class to put items into a row-->
+  		<div class="row">
+  			<!--column class to to cards into columns-->
+  			<div class="col">
+  				<!--Decription Title and text-->
+  				<h1>Most Popular Cities in Asia</h1>
+  				<p>When you picture an Asian city, what evocative scenes waft through your mind? Camels nonchalantly striding alongside honking traffic… Hawkers competing with one another's shouts in smoky bazaars… Grand, crumbling fortresses from another age and many-tiered pagodas stacking up towards the sky…? Asia has so much to offer and its popular cities are as varied as its peoples and cultures. 
+  				<br>
+  				<br>	
+  				Here we present to you the best and most popular cities in Asia, so the next time you are here, do not forget to stop by!</p>	
+  				<button type="button">Explore</button>
+  			</div>
+  			<div class="col">
+  				<!--Highlight card 1-->
+  				<div class="highlight-card card1">
+  					<h5>Hong Kong</h5>
+  				</div>
+  				<!--Highlight card 2-->
+  				<div class="highlight-card card2">
+  					<h5>Singapore</h5>
+  				</div>
+  				<!--Highlight card 3-->
+  				<div class="highlight-card card3">
+  					<h5>Bangkok, Thailand</h5>
+  				</div>
+  				<!--Highlight card 4-->
+  				<div class="highlight-card card4">
+  					<h5>Seoul, South Korea</h5>
+  				</div>
+  				<!--Highlight card 5-->
+  				<div class="highlight-card card5">
+  					<h5>Tokyo, Japan</h5>
+  				</div>
+  				<!--Highlight card 6-->
+  				<div class="highlight-card card6">
+  					<h5>Beijing, China</h5>
+  				</div>
+  			</div>
+  		</div>
+  	</div>	
+  </section>
+  <!--End of highlight section-->
+
+  <!--Start of footer-->
+  <footer>
+    <!--Container for footer-->
+    <div class="footer-container">
+      <div class="footer">
+        <!--List for first footer section-->
+        <div class="footer-heading footer-1">
+          <h2>Destinations</h2>
+          <!--Navigation links to other pages-->
+          <a href="asia.html#ASIA">Asia</a>
+          <a href="asia.html#SA">Southeast Asia</a>
+          <a href="america.html#NA">North America</a>
+          <a href="america.html#SA">South America</a>
+          <a href="europe.html#EURO">Europe</a>         
+        </div>
+        <!--List for second footer section-->
+        <div class="footer-heading footer-2">
+          <h2>Interests</h2>
+          <!--Dummy Navigation links to future pages-->
+          <a href="#">Beaches And Islands</a>
+          <a href="#">Family Trips</a>
+          <a href="#">Honeymoon</a>
+          <a href="#">Food And Drink</a>
+          <a href="#">Wildlife And Nature</a>
+          <a href="#">Festivals</a>         
+        </div>
+        <!--List for third footer section-->
+        <div class="footer-heading footer-3">
+          <h2>Social Media</h2>
+          <!--Navigation icons leading to social media profiles-->
+          <div class="icons">
+            <!--Icons imported from font-awesome-->
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          </div>              
+        </div>
+        <!--Sign up section-->
+        <div class="footer-email-form">
+          <h2>Join Us</h2>
+          <!--Text box to input email to sign up-->
+          <input type="email" placeholder="Enter your email" id="footer-email">
+          <!--Button to sign up-->
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--End of footer-->
+
+<!--Javascript for modals to work-->
+<script src="./js/asia.js"></script>
+</body>
+</html>

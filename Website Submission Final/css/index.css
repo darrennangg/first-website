@@ -1,0 +1,589 @@
+/*CSS for index page*/
+
+/*Imported fonts from Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+
+/*Applying parameters and font to everything*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/*CSS for navigation bar*/
+nav {
+  height: 80px; /* Height for navigation container*/
+  width: 100%; /*responsive full screen width*/
+}
+
+label.logo { /*CSS for logo*/
+  color: black; 
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 60px; 
+  font-weight: bold;
+  font-family: "Lobster Two", cursive; /*Custom font for logo*/
+  cursor: pointer; /* Turn cursor to pointer when hovered over*/
+}
+
+.homelogo{
+  text-decoration: none; /*Remove underline on logo*/
+}
+
+.homelogo:hover{
+  background: none; /*Remove background color when hovered over logo*/ 
+}
+
+nav ul{ /*CSS for navigation link container*/
+	float: right; /*Float navigation links to the right*/
+	margin-right: 20px;
+}
+
+nav ul li{ /*CSS for navigation links*/
+	display: inline-block; /* Put them into a row instead of column*/
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a{ /*CSS for navigation link words*/
+	color: black;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+
+a.active,a:hover{
+	background: #bbeaff; /*background color when hovered over*/
+	transition: .5s; /* fading in effect */
+}
+
+.checkbtn{ /*CSS for menu button when in mobile and tablet mode */
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check{ /* remove check button on the left */
+	display: none;
+}
+
+/*CSS to make it responsive for mobile and tablet for nav bar*/
+@media (max-width: 952px){ 
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		background: white;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 2; /*Push menu to the front */
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover,a.active{
+		background: none;
+		color: skyblue;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+/*End of CSS for Navigation Bar*/
+
+/*Start of CSS for image slider*/
+
+/*CSS for image slider container*/
+.slider{
+	position: relative;
+	overflow: hidden; /* Hide excess content outside of container*/
+	height: 100vh; /* Responsive height full height*/
+	width: 100%; /*Responsive width full screen*/
+}
+
+/*CSS for image container*/
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0; /*Make image invisble at first*/
+	transition: opacity 0.4s ease-in-out; /* Transition of image when moving to next slide*/
+}
+
+/*CSS for current slide*/
+.slide.current{
+	opacity: 1; /*display current slide*/
+}
+
+/*CSS for text content within slides*/
+.slide .content{
+	position: absolute;
+	bottom: 70px;
+	left: -600px;
+	width: 600px;
+	background-color: rgba(255,255,255,0.7);
+	padding: 35px;
+}
+
+
+.slide .content h1{
+	margin-bottom: 10px; 
+}
+
+/*CSS for slide content to transition into slide*/
+.slide.current .content{
+	opacity: 1;
+	transform: translateX(600px);
+	transition: all 0.7s ease-in-out 0.3s;
+}
+
+/*CSS for placement of next slide button*/
+.buttons button#next{
+	position: absolute;
+	top: 50%;
+	right: 40px;
+}
+
+/*CSS for placement of prev slide button*/
+.buttons button#prev{
+	position: absolute;
+	top: 50%;
+	left: 40px;
+}
+
+/*CSS for button design*/
+.buttons button{
+	border: 2px solid #fff;
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+	padding: 13px 15px;
+	outline: none;
+} 
+
+/*CSS for button hover design*/
+.buttons button:hover{
+	background-color: #fff;
+	color: #333;
+}
+
+/*CSS to make it responsive for mobile and tablet for slider*/
+@media (max-width: 500px){
+	.slide .content{
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+	}
+
+	.slide.current .content{
+		transform: translateY(-300px);
+	}
+}
+
+
+/*Background Images for slides*/
+.slide:first-child {
+  background: url(../media/images/1.jpg) no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+	background: url(../media/images/2.jpg) no-repeat center top/cover;
+}
+.slide:nth-child(3) {
+	background: url(../media/images/3.jpg) no-repeat center top/cover;
+}
+.slide:nth-child(4) {
+	background: url(../media/images/4.jpg) no-repeat center top/cover;
+}
+.slide:nth-child(5) {
+	background: url(../media/images/5.jpg) no-repeat center top/cover;
+}
+
+/*End of CSS for image slider*/
+
+/*CSS for description box*/
+
+.desc-text-container {
+  margin: 100px 20px 0 20px;
+  text-align: center;
+}
+
+.desc-text-container h2 {
+  font-size: 4vw;
+}
+
+/*End of CSS for description box*/
+
+/*Start of CSS for cards*/
+
+/*CSS for container of card*/
+article {
+  margin: 0px 15px 75px 15px;
+  background-color: white;
+  display: flex; /* Ensure cards are in a row and of equal size*/
+  justify-content: center; /* Make sure cards are in the centre of page */
+  align-items: center; /* Align cards to the centre of container */
+  min-height: 100vh;
+}
+
+.grid {
+  display: flex; /* Display cards in a row */
+  width: 100em;
+  grid-gap: 3rem; /*Gap between each card*/
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /*Adjust size of cards to fit screen*/
+ }
+
+/*CSS for individual cards*/
+.grid-item {
+  background-color: white;
+  border-radius: 0.4rem; /*Round out the card edges*/
+  overflow: hidden; /* Hide overflowing content*/
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); /*Shadow effect surrounding the cards*/
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/*CSS when cards are hovered over*/
+.grid-item:hover {
+  transform: translateY(-0.5%); /*Make cards jump up a little*/
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5); /*Make shadow effect more visible*/
+}
+
+/*CSS for card images*/
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover; /*fit image to dimensions keeping its aspect ratio*/
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+/*CSS for card text*/
+.card-header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/*CSS for button*/
+.modal-open {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background: skyblue;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0rem;
+}
+
+/*CSS for button when hovered*/	
+.modal-open:hover,
+.modal-open:active {
+  background-color: #bbeaff;
+}
+
+article a{
+	text-decoration: none; /*remove underline from link*/
+}
+
+/*CSS to make it responsive for mobile and tablet for cards*/
+@media only screen and (max-width: 1000px) {
+  article {
+    padding: 3rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 3rem;
+  }
+}
+
+/*End of CSS for cards*/
+
+/*Start of CSS for blog*/
+
+/*Overall CSS for blog*/
+.blog{
+	padding: 20px 0;
+	margin-top: 50px;
+	text-align: center;
+}
+
+/*CSS for blog container*/
+.blog-container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*CSS for main section (blog posts)*/
+main{
+	display: grid; /* display blog posts in a grid*/
+	grid-template-columns: repeat(3, 1fr); /* Display 3 in a row*/
+	grid-gap: 30px;
+	margin: 30px 15px 0 15px;
+}
+
+/*CSS for blog link buttons*/
+.blog a{
+	transition: all .5s;
+	text-decoration: none; /*Remove underline*/
+	color: #fff; 
+}
+
+/*CSS for h2 text*/
+.blog h2{
+	font-size: 4vw;
+}
+
+/*CSS for image in blog posts*/
+.blog img{
+	width: 100%;
+	height: 100%;
+	transition: all .5s;
+}
+
+/*CSS for individual blog post*/
+.single-blog{
+	position: relative;
+	overflow: hidden;
+	max-height: 580px;
+	height: 100%;
+	box-sizing: border-box;
+	transition: all .5s;
+}
+
+/*CSS when individual blog post are hovered over*/
+.single-blog:hover{
+	transition: all .5s;
+}
+
+/*CSS for blog post image when blog post is hovered over*/
+.single-blog:hover img{
+	transform: scale(1.1); /*Scale image size to make a zoom in effect*/
+	transition: all .4s;
+}
+
+/*CSS for blog content*/
+.blog-content{
+	position: absolute;
+	left: 0;
+	bottom: -43px;
+	width: 100%;
+	color: #fff;
+	padding: 10px 5px;
+	background: rgba(135, 206, 250,.3);
+	transition: all .5s;
+
+}
+
+.single-blog:hover .blog-content{
+	bottom: 0;
+	transition: all .5s;
+}
+
+/*CSS for h3 text*/
+.blog-content h3{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+/*CSS for span text*/
+.blog-content h3 span{
+	display: block;
+	font-size: 60%;
+	margin-top: 5px;
+	font-weight: 600;
+}
+
+/*CSS for p text*/
+.blog-content p{
+	padding-bottom: 10px;
+}
+
+/*CSS for blog link*/
+.blog-content a{
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.blog-content .btn{
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	font-weight: 400;
+}
+
+.blog-content .btn:hover{
+	background: rgba(52,152,219,1.0);
+	transition: all .5s;
+	text-decoration: none;
+}
+
+.blog-content a:hover{
+	text-decoration: none;
+}
+
+/*CSS to make it responsive for mobile and tablet for blog*/
+@media (max-width: 1200px){
+	main{
+		grid-template-columns: repeat(2, 1fr); /*Put blog posts in columns of 2*/
+		grid-gap: 15px;
+	}	
+}
+
+@media (max-width: 800px){
+	main{
+		grid-template-columns: repeat(1, 1fr); /*But blog posts in a single column*/
+	}	
+}
+
+/*Start of CSS for footer*/
+
+/*CSS for footer container*/
+.footer-container{
+	background-color: white;
+	padding: 2rem 0 2rem 0;
+}
+
+/*CSS for footer*/
+.footer{
+	width: 100%;
+	height: 30vh;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /*Contain footer content into container*/
+	margin: 0 auto;
+}
+
+/*CSS for footer text headings*/
+.footer-heading{
+	display: flex; /*Put them in a row*/
+	flex-direction: column;
+	margin-right: 4rem;
+}
+
+/*CSS for social media icons*/
+.icons{
+	text-align: center;
+}
+
+.footer-heading h2{
+	margin-bottom: 2rem;
+}
+
+/*CSS for all navigation links in footer*/
+.footer-heading a{
+	color: black;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+}
+
+/*CSS for all navigation links in footer when hovered*/
+.footer-heading a:hover{
+	color: skyblue;
+	transition: 0.3s ease-in-out;
+	background: none;
+}
+
+.footer-email-form h2{
+	margin-bottom: 2rem;
+}
+
+/*CSS for email box*/
+#footer-email{
+	width: 250px;
+	height: 30px;
+	border-radius: 3px;
+	outline: none;
+	padding-left: 0.5rem;	
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+	color: #b1b1b1;
+}
+
+/*CSS for email button*/
+#footer-email-btn{
+	width: 100px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: black;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+/*CSS for email button when hovered*/
+#footer-email-btn:hover{
+	cursor: pointer;
+	background-color: skyblue;
+	transition: all 0.4s ease-out;
+}
+
+/*CSS to make it responsive for mobile and tablet for footer*/
+@media screen and (max-width: 1150px){
+	.footer{
+		height: 60vh;
+	}
+	.footer-email-form{
+		margin-top: 4rem;
+	}
+}
+
+@media screen and (max-width: 820px){
+	.footer{
+		padding-top: 1rem;
+	}
+	
+}
+
+@media screen and (max-width: 720px){
+	.footer-3{
+		display: none; /*Don't display social media section*/
+	}
+	.footer-email-form{
+		margin-top: 1rem;
+	}
+}
+
+/*End of CSS for footer*/
